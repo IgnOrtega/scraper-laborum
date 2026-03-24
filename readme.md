@@ -1,78 +1,99 @@
-# FirstJob Scraper
+# Laborum Scraper 🚀
 
-Scraper automatizado desarrollado con **Playwright (Python)** para extraer ofertas laborales desde firstjob.
+Scraper automatizado desarrollado con **Python** y **Playwright** para la extracción masiva de ofertas laborales desde el portal **Laborum.cl**.
 
-El scraper:
-
-- Recorre todas las páginas disponibles
-- Abre cada oferta en una nueva pestaña
-- Descarga el contenido completo en archivos `.txt`
-- Genera un resumen de todas las ofertas en formato Excel (`.xlsx`)
----
-
-## 📦 Estructura del Proyecto
-firstjob_scraper/  
-│  
-├── main.py # Punto de entrada del programa  
-├── config.py # Configuración global  
-├── browser.py # Inicialización y cierre de navegador  
-├── scraper.py # Lógica principal de scraping  
-└── utils.py # Funciones auxiliares  
+El sistema está diseñado para navegar de forma asíncrona, manejar paginación, evadir detecciones básicas mediante retrasos aleatorios y consolidar la información en formatos estructurados.
 
 ---
 
-## ⚙️ Requisitos
+## ✨ Características Principales
 
-- Python 3.12.10
-- playwright==1.58.0
-- Pandas==3.0.1
-- Numpy==2.4.2
-- openpyxl==3.1.5
+- **Navegación Asíncrona:** Basado en `playwright` para una ejecución rápida y eficiente.
+- **Extracción Híbrida:** Combina Playwright para la navegación y BeautifulSoup para el procesamiento de texto.
+- **Evasión de Bloqueos:** Implementa User-Agents aleatorios y retrasos con distribución uniforme para mimetizar el comportamiento humano.
+- **Gestión de Datos:** 
+  - Guarda el contenido de cada oferta en archivos `.txt` individuales.
+  - Genera un resumen maestro en Excel (`.xlsx`) con fecha y URL.
+- **Detección de Duplicados:** Opción para omitir ofertas ya procesadas en ejecuciones anteriores.
 
-Instalación de dependencias:
+---
 
+## 🛠️ Requisitos
+
+- **Python:** 3.12+
+- **Dependencias:** Listadas en `requirements.txt` (Playwright, Pandas, BeautifulSoup4, openpyxl, etc.)
+
+---
+
+## 🚀 Instalación y Configuración
+
+1. **Clonar el repositorio o descargar los archivos.**
+2. **Instalar dependencias:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Instalar los navegadores de Playwright:**
+   ```bash
+   playwright install chromium
+   ```
+
+---
+
+## ⚙️ Uso (Línea de Comandos)
+
+El script se ejecuta desde `main.py` y acepta los siguientes argumentos:
+
+| Argumento | Descripción | Por Defecto |
+| :--- | :--- | :--- |
+| `--dir` | **(Requerido)** Directorio raíz donde se guardarán los resultados. | N/A |
+| `--headless` | `true` para ejecutar sin ventana, `false` para ver el navegador. | `false` |
+| `--pages` | Cantidad máxima de páginas a recorrer (0 para todas). | `0` (Todas) |
+| `--delay` | Tiempo promedio de espera (segundos) entre páginas. | `3.0` |
+
+### Ejemplo de ejecución:
 ```bash
-pip install numpy==2.4.2 pandas==3.0.1 playwright==1.58.0 openpyxl==3.1.5
-playwright install
+python main.py --dir "C:\Proyectos\ScraperLaborum\Data" --headless false --pages 5 --delay 2.5
 ```
-o utilizando el archivo ```requirements.txt``` con el comando: 
-pip install -r requirements.txt
 
-## ⚙️ Input
-Argumentos necesarios:
-- dir → Argumento que indica en donde serán alojados los archivos.
-- headless → Argumento que indica si activa el modo headless, por defecto el valor es `true`.
+---
 
-## 🚀 Cómo Ejecutar
-Desde la raíz del proyecto puedes ejecutar por ejemplo:
-```bash
-python "main.py" --dir "C:\Users\nombre_usuario\Desktop\datos" --headless false
+## 📁 Estructura del Proyecto
+
+```text
+laborum_scraper/
+├── main.py          # Punto de entrada y orquestación del flujo.
+├── scraper.py       # Lógica de extracción y procesamiento de páginas.
+├── browser.py       # Configuración y ciclo de vida del navegador (Playwright).
+├── config.py        # Configuración global (URLs, reintentos).
+├── utils.py         # Funciones auxiliares (logs, limpieza de texto, decoradores).
+├── requirements.txt # Librerías necesarias.
+└── README.md        # Documentación del proyecto.
 ```
-El scraper:
-- Abre Chromium según el argumento.
-- Recorre todas las páginas.
-- Descarga cada oferta en ```/data/first_job/raw_data/.../```
-- Genera el archivo: ```/data/first_job/summary_data/.../summary_data.xlsx```
 
-Columna	Descripción  
-- Nombre: Título de la oferta
-- Fecha: Fecha de ejecución
-- Pageweb: URL de la oferta
+---
 
-## 📁 Output
-Archivos generados:
-- data/first_job/raw_data/.../*.txt → Contenido completo de cada oferta
-- data/first_job/summary_data/.../summary_data.xlsx → Resumen con columnas
+## 📊 Salida de Datos (Output)
 
-Columnas Descripción Excel:
-- Nombre: Título de la oferta
-- Fecha: Fecha de ejecución
-- Pageweb: URL de la oferta
+Los archivos se organizan automáticamente por fecha en la carpeta indicada en `--dir`:
 
-## 🧠 Arquitectura
-El proyecto sigue principios de separación de responsabilidades:
-- config.py → Variables globales y configuración
-- browser.py → Ciclo de vida del navegador
-- scraper.py → Lógica de extracción
-- utils.py → Funciones reutilizables
-- main.py → Orquestación
+1. **Raw Data (`/laborum/raw_data/YYYY-MM-DD/*.txt`):** 
+   - Un archivo por cada oferta con el título sanitizado.
+   - Contiene la descripción completa o resumen de la vacante.
+2. **Summary Data (`/laborum/summary_data/YYYY-MM-DD/summary_data.xlsx`):**
+   - Excel consolidado con columnas: `Fecha`, `Nombre`, `Empresa`, `Ubicación`, `Tipo`, `Pageweb`.
+
+---
+
+## 🧠 Arquitectura Técnica
+
+El scraper sigue un ciclo de vida robusto:
+1. **Inicio:** Configura el navegador y verifica datos previos para evitar duplicados.
+2. **Navegación:** Accede a la URL de Laborum y cierra automáticamente modales publicitarios.
+3. **Extracción:** Recorre el listado, captura los datos visibles y guarda archivos individuales.
+4. **Paginación:** Busca el botón "Siguiente", aplica un retraso aleatorio y repite el proceso.
+5. **Cierre:** Consolida la lista final en un reporte Excel.
+
+---
+
+## ⚠️ Notas Legales
+Este proyecto tiene fines educativos. El uso de herramientas de web scraping debe respetar los términos y condiciones del sitio web (`laborum.cl/robots.txt`) y la legislación vigente sobre protección de datos.
