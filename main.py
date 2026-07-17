@@ -1,12 +1,8 @@
-import os
 import asyncio
 import argparse
 import random
 import math
-from datetime import datetime
 from pathlib import Path
-
-import pandas as pd
 
 from config import BASE_URL, FECHA_HOY
 from browser import iniciar_browser, cerrar_browser
@@ -42,6 +38,7 @@ async def main(DATA_DIR, HEADLESS_BOOL, MAX_PAGES=None, DELAY_EXPECTED=3.0):
         logger.info(f"Se encontraron {len(datos_previos)} ofertas previas para omitir descarga.")
 
     lista_datos = []
+    urls_vistas = set()  # compartido entre páginas para no duplicar ofertas que se desplazan al paginar
 
     playwright, browser, context, page = await iniciar_browser(HEADLESS_BOOL)
 
@@ -65,10 +62,10 @@ async def main(DATA_DIR, HEADLESS_BOOL, MAX_PAGES=None, DELAY_EXPECTED=3.0):
 
             await scrapear_pagina(
                 page,
-                context,
                 FECHA_HOY,
                 lista_datos,
                 RAW_DATA_DIR,
+                urls_vistas,
                 datos_previos
             )
 
@@ -98,16 +95,20 @@ async def main(DATA_DIR, HEADLESS_BOOL, MAX_PAGES=None, DELAY_EXPECTED=3.0):
     except Exception as e:
         logger.error(f"Error crítico durante la ejecución: {e}", exc_info=True)
     finally:
-        await cerrar_browser(playwright, browser)
+        try:
+            await cerrar_browser(playwright, browser)
+        except Exception as e:
+            logger.warning(f"Error al cerrar el navegador: {e}")
 
-
-    if lista_datos:
-        output_file = SUMMARY_DATA_DIR / "summary_data.xlsx"
-        guardar_excel(lista_datos, output_file)
-        logger.info(f"Scraping finalizado. {len(lista_datos)} ofertas procesadas.")
-        logger.info(f"Datos guardados en {output_file}")
-    else:
-        logger.warning("No se encontraron datos para guardar.")
+        # Guardar dentro del finally: así no se pierde lo scrapeado si el
+        # proceso se interrumpe (Ctrl+C) o falla a mitad de camino.
+        if lista_datos:
+            output_file = SUMMARY_DATA_DIR / "summary_data.xlsx"
+            guardar_excel(lista_datos, output_file)
+            logger.info(f"Scraping finalizado. {len(lista_datos)} ofertas procesadas.")
+            logger.info(f"Datos guardados en {output_file}")
+        else:
+            logger.warning("No se encontraron datos para guardar.")
 
 
 if __name__ == "__main__":
@@ -135,10 +136,11 @@ if __name__ == "__main__":
     )
     
     args = parser.parse_args()
-    
     try:
         asyncio.run(main(args.dir, args.headless, args.pages, args.delay))
     except KeyboardInterrupt:
         logger.info("Proceso interrumpido por el usuario.")
-
-# python "main.py" --dir "C:\Users\Nach\Desktop\datos" --headless "false" --pages 0 --delay 1
+# Delay sirve para esperar que cargue las ofertas de la pagina i, con i in {1,total paginas}
+# si delay es bajo el scraper puede pensar que la pagina i no tiene ofertas y termina el proceso
+# python "main.py" --dir "C:\Users\Nach\Desktop\datos" --headless "false" --pages 1 --delay 1.5
+# python "main.py" --dir "C:\Users\Nach\Desktop\datos" --headless "false" --delay 0

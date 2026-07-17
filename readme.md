@@ -9,12 +9,12 @@ El sistema está diseñado para navegar de forma asíncrona, manejar paginación
 ## ✨ Características Principales
 
 - **Navegación Asíncrona:** Basado en `playwright` para una ejecución rápida y eficiente.
-- **Extracción Híbrida:** Combina Playwright para la navegación y BeautifulSoup para el procesamiento de texto.
-- **Evasión de Bloqueos:** Implementa User-Agents aleatorios y retrasos con distribución uniforme para mimetizar el comportamiento humano.
+- **Extracción desde el listado:** Captura título, empresa y resumen de cada oferta directamente desde las cards del listado (sin visitar cada oferta).
+- **Evasión de Bloqueos:** Implementa retrasos aleatorios con distribución uniforme para mimetizar el comportamiento humano.
 - **Gestión de Datos:** 
   - Guarda el contenido de cada oferta en archivos `.txt` individuales.
   - Genera un resumen maestro en Excel (`.xlsx`) con fecha y URL.
-- **Detección de Duplicados:** Opción para omitir ofertas ya procesadas en ejecuciones anteriores.
+- **Detección de Duplicados:** Reutiliza los datos del summary más reciente para ofertas ya vistas y evita duplicados entre páginas.
 
 ---
 
@@ -77,7 +77,7 @@ laborum_scraper/
 Los archivos se organizan automáticamente por fecha en la carpeta indicada en `--dir`:
 
 1. **Raw Data (`/laborum/raw_data/YYYY-MM-DD/*.txt`):** 
-   - Un archivo por cada oferta con el título sanitizado.
+   - Un archivo por cada oferta, nombrado como titulo_sanitizado_idOferta.txt (el id evita colisiones entre títulos repetidos).
    - Contiene la descripción completa o resumen de la vacante.
 2. **Summary Data (`/laborum/summary_data/YYYY-MM-DD/summary_data.xlsx`):**
    - Excel consolidado con columnas: `Fecha`, `Nombre`, `Empresa`, `Ubicación`, `Tipo`, `Pageweb`.
