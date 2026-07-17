@@ -1,0 +1,45 @@
+name: Daily Laborum Scraper
+
+on:
+  schedule:
+    # 10:00 UTC ≈ 06:00-07:00 hora de Chile. El enlace cubre ofertas de los
+    # últimos 2 días, por lo que una corrida diaria tiene margen si un día falla.
+    - cron: '0 10 * * *'
+  workflow_dispatch: # Permite ejecutarlo manualmente desde la web de GitHub
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Install Playwright browsers
+      run: playwright install --with-deps chromium
+
+    - name: Run scraper
+      run: python main.py --dir data --headless true --delay 3
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add data/
+        git commit -m "Auto-update: Laborum scraper results $(date +'%Y-%m-%d')" || echo "No changes to commit"
+        git pull --rebase --autostash
+        git push

@@ -14,7 +14,9 @@ El sistema está diseñado para navegar de forma asíncrona, manejar paginación
 - **Gestión de Datos:** 
   - Guarda el contenido de cada oferta en archivos `.txt` individuales.
   - Genera un resumen maestro en Excel (`.xlsx`) con fecha y URL.
-- **Detección de Duplicados:** Reutiliza los datos del summary más reciente para ofertas ya vistas y evita duplicados entre páginas.
+- **Detección de Duplicados:** Mantiene un Excel maestro con historial de 30 días; las ofertas ya vistas no se vuelven a procesar.
+- **Análisis por Puntaje:** Cada oferta se puntúa según keywords de perfil data/automatización y se marcan flags (remoto, híbrido, inglés, part-time, práctica, trainee).
+- **Ejecución Automática:** Workflow de GitHub Actions que corre el scraper a diario y commitea los resultados en `data/`.
 
 ---
 
@@ -45,7 +47,7 @@ El script se ejecuta desde `main.py` y acepta los siguientes argumentos:
 
 | Argumento | Descripción | Por Defecto |
 | :--- | :--- | :--- |
-| `--dir` | **(Requerido)** Directorio raíz donde se guardarán los resultados. | N/A |
+| `--dir` | Directorio raíz donde se guardarán los resultados. | `data` |
 | `--headless` | `true` para ejecutar sin ventana, `false` para ver el navegador. | `false` |
 | `--pages` | Cantidad máxima de páginas a recorrer (0 para todas). | `0` (Todas) |
 | `--delay` | Tiempo promedio de espera (segundos) entre páginas. | `3.0` |
@@ -79,8 +81,8 @@ Los archivos se organizan automáticamente por fecha en la carpeta indicada en `
 1. **Raw Data (`/laborum/raw_data/YYYY-MM-DD/*.txt`):** 
    - Un archivo por cada oferta, nombrado como titulo_sanitizado_idOferta.txt (el id evita colisiones entre títulos repetidos).
    - Contiene la descripción completa o resumen de la vacante.
-2. **Summary Data (`/laborum/summary_data/YYYY-MM-DD/summary_data.xlsx`):**
-   - Excel consolidado con columnas: `Fecha`, `Nombre`, `Empresa`, `Ubicación`, `Tipo`, `Pageweb`.
+2. **Summary Data (`/laborum/summary_data.xlsx`):**
+   - Excel maestro consolidado (historial rodante de 30 días) con columnas: `Fecha`, `Nombre`, `Empresa`, `Ubicacion`, `Tipo`, `Pageweb`, `puntaje_data`, `keyword`, `ingles`, `remoto`, `hibrido`, `presencial`, `part_time`, `practica`, `trainee`, `automatizacion`, `oferta`.
 
 ---
 

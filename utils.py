@@ -1,6 +1,9 @@
 import re
 import argparse
 import logging
+import shutil
+from datetime import datetime, timedelta
+
 import pandas as pd
 from pathlib import Path
 
@@ -30,39 +33,63 @@ def setup_logger(name: str = "laborum_scraper", log_file: str = "scraper.log", l
 logger = setup_logger()
 
 
-def obtener_datos_previos(summary_base_dir: Path) -> dict:
+def cargar_historial(master_path: Path, dias: int = 30):
     """
-    Busca el archivo summary_data.xlsx más reciente y devuelve un diccionario {url: datos}.
-    Las URLs se normalizan (sin query string ni slash final) para que coincidan
-    con las claves que usa el scraper.
+    Carga el Excel maestro, descarta filas con más de `dias` días y devuelve:
+      (filas, urls_vistas)
+    - filas: lista de dicts con las ofertas históricas (conservan su fecha original).
+    - urls_vistas: set de URLs normalizadas (sin query string ni slash final),
+      para que el scraper no vuelva a procesar esas ofertas.
     """
-    if not summary_base_dir.exists():
-        return {}
+    if not master_path.exists():
+        return [], set()
 
-    # Listar carpetas de fechas y ordenarlas
-    carpetas_fechas = sorted([d for d in summary_base_dir.iterdir() if d.is_dir()])
+    try:
+        df = pd.read_excel(master_path)
+    except Exception as e:
+        logger.error(f"Error al cargar el historial {master_path}: {e}")
+        return [], set()
 
-    if not carpetas_fechas:
-        return {}
+    if df.empty or "Pageweb" not in df.columns:
+        return [], set()
 
-    # Empezamos por la más reciente
-    for carpeta in reversed(carpetas_fechas):
-        archivo_excel = carpeta / "summary_data.xlsx"
-        if archivo_excel.exists():
+    if "Fecha" in df.columns:
+        fechas = pd.to_datetime(df["Fecha"], errors="coerce")
+        limite = pd.Timestamp.today().normalize() - pd.Timedelta(days=dias)
+        df = df[fechas >= limite].copy()
+        df["Fecha"] = pd.to_datetime(df["Fecha"], errors="coerce").dt.strftime("%Y-%m-%d")
+
+    filas = df.to_dict("records")
+    urls_vistas = set()
+    for fila in filas:
+        url = fila.get("Pageweb")
+        if isinstance(url, str):
+            urls_vistas.add(url.split('?')[0].rstrip('/'))
+
+    logger.info(f"Historial cargado: {len(filas)} ofertas de los últimos {dias} días.")
+    return filas, urls_vistas
+
+
+def limpiar_raw_antiguo(raw_base: Path, dias: int = 30) -> None:
+    """
+    Elimina del disco las carpetas raw_data/YYYY-MM-DD con más de `dias` días.
+    """
+    if not raw_base.exists():
+        return
+    limite = datetime.now() - timedelta(days=dias)
+    for carpeta in raw_base.iterdir():
+        if not carpeta.is_dir():
+            continue
+        try:
+            fecha_carpeta = datetime.strptime(carpeta.name, "%Y-%m-%d")
+        except ValueError:
+            continue
+        if fecha_carpeta < limite:
             try:
-                logger.info(f"Cargando datos previos desde {archivo_excel}")
-                df = pd.read_excel(archivo_excel)
-                datos = {}
-                for url, fila in df.set_index('Pageweb').to_dict('index').items():
-                    if not isinstance(url, str):
-                        continue
-                    clean_url = url.split('?')[0].rstrip('/')
-                    datos[clean_url] = fila
-                return datos
+                shutil.rmtree(carpeta)
+                logger.info(f"Eliminada carpeta antigua de raw_data: {carpeta.name}")
             except Exception as e:
-                logger.error(f"Error al cargar el archivo previo {archivo_excel}: {e}")
-
-    return {}
+                logger.error(f"Error al eliminar carpeta {carpeta}: {e}")
 
 
 def str2bool(value):

@@ -4,6 +4,14 @@ import re
 import pandas as pd
 
 from utils import sanitize_filename, logger
+from processor_utils import analizar_oferta
+
+# Orden de columnas del Excel maestro (las de análisis van entre Pageweb y oferta)
+COLUMNAS_EXCEL = [
+    "Fecha", "Nombre", "Empresa", "Ubicacion", "Tipo", "Pageweb",
+    "puntaje_data", "keyword", "ingles", "remoto", "hibrido", "presencial",
+    "part_time", "practica", "trainee", "automatizacion", "oferta"
+]
 
 
 def _id_oferta(url: str) -> str:
@@ -19,20 +27,12 @@ def _ruta_archivo(carpeta_destino, titulo: str, clean_url: str):
     return carpeta_destino / f"{sanitize_filename(titulo)[:120]}_{_id_oferta(clean_url)}.txt"
 
 
-def _campo(prev: dict, clave: str, default: str = "N/A") -> str:
-    """Lee un campo de una fila previa del Excel tolerando NaN/valores no string."""
-    valor = prev.get(clave)
-    if isinstance(valor, str) and valor.strip():
-        return valor
-    return default
-
-
-async def scrapear_pagina(page, fecha_hoy, lista_datos, carpeta_destino, urls_vistas, datos_previos=None):
+async def scrapear_pagina(page, fecha_hoy, lista_datos, carpeta_destino, urls_vistas):
     """
     Extrae la información de todas las ofertas directamente desde el listado de la página actual.
 
-    urls_vistas es un set compartido entre páginas: evita duplicados cuando una
-    oferta se desplaza de una página a otra durante la paginación.
+    urls_vistas es un set compartido entre páginas y precargado con el historial:
+    evita duplicados al paginar y re-procesar ofertas de días anteriores.
     """
     # Esperar a que el listado cargue antes de leerlo (evita terminar antes de
     # tiempo cuando la página tarda en renderizar las ofertas).
@@ -46,7 +46,7 @@ async def scrapear_pagina(page, fecha_hoy, lista_datos, carpeta_destino, urls_vi
     elementos = await page.locator('a[href*="/empleos/"]').all()
 
     nuevas = 0
-    reutilizadas = 0
+    omitidas = 0
 
     for el in elementos:
         try:
@@ -57,34 +57,13 @@ async def scrapear_pagina(page, fecha_hoy, lista_datos, carpeta_destino, urls_vi
             if url.startswith("/"):
                 url = "https://www.laborum.cl" + url
 
-            # Limpiar URL y evitar duplicados (algunas cards tienen varios links a la misma oferta)
+            # Limpiar URL y evitar duplicados (algunas cards tienen varios links a la misma oferta,
+            # y las ofertas de días anteriores ya vienen precargadas desde el historial)
             clean_url = url.split('?')[0].rstrip('/')
             if clean_url in urls_vistas:
+                omitidas += 1
                 continue
             urls_vistas.add(clean_url)
-
-            # Si la oferta ya fue procesada en una ejecución anterior, reutilizamos
-            # sus datos (pueden ser más completos) en lugar de volver a extraerla.
-            if datos_previos and clean_url in datos_previos:
-                prev = datos_previos[clean_url]
-                titulo = _campo(prev, "Nombre", "sin_titulo")
-                texto = _campo(prev, "oferta", "")
-
-                archivo = _ruta_archivo(carpeta_destino, titulo, clean_url)
-                if not archivo.exists():
-                    archivo.write_text(texto, encoding="utf-8")
-
-                lista_datos.append({
-                    "Fecha": fecha_hoy,
-                    "Nombre": titulo,
-                    "Empresa": _campo(prev, "Empresa"),
-                    "Ubicacion": _campo(prev, "Ubicacion"),
-                    "Tipo": _campo(prev, "Tipo"),
-                    "Pageweb": clean_url,
-                    "oferta": texto
-                })
-                reutilizadas += 1
-                continue
 
             # --- EXTRACCIÓN DIRECTA DESDE EL LISTADO ---
             # Título: El primer H2 dentro del contexto de la oferta
@@ -102,6 +81,10 @@ async def scrapear_pagina(page, fecha_hoy, lista_datos, carpeta_destino, urls_vi
             empresa = await empresa_el.text_content() if await empresa_el.count() > 0 else "N/A"
             empresa = empresa.strip()
 
+            # Análisis por puntaje/keywords (se incluye el título porque el
+            # resumen del listado es corto y el título aporta señal)
+            analisis = analizar_oferta(f"{titulo}\n{descripcion}")
+
             # Guardar en la lista
             lista_datos.append({
                 "Fecha": fecha_hoy,
@@ -110,6 +93,7 @@ async def scrapear_pagina(page, fecha_hoy, lista_datos, carpeta_destino, urls_vi
                 "Ubicacion": "Ver en descripción",  # No siempre está explícita en el listado
                 "Tipo": "N/A",
                 "Pageweb": clean_url,
+                **analisis,
                 "oferta": descripcion
             })
 
@@ -125,7 +109,8 @@ async def scrapear_pagina(page, fecha_hoy, lista_datos, carpeta_destino, urls_vi
         except Exception as e:
             logger.error(f"Error al extraer oferta del listado: {e}")
 
-    logger.info(f"Página procesada: {nuevas} ofertas nuevas, {reutilizadas} reutilizadas.")
+    logger.info(f"Página procesada: {nuevas} ofertas nuevas, {omitidas} ya conocidas/duplicadas.")
+    return nuevas
 
 
 async def ir_siguiente_pagina(page) -> bool:
@@ -161,6 +146,10 @@ async def ir_siguiente_pagina(page) -> bool:
 def guardar_excel(lista_datos, output_path):
     try:
         df = pd.DataFrame(lista_datos)
+        # Ordenar columnas: primero las conocidas, luego cualquier extra
+        orden = [c for c in COLUMNAS_EXCEL if c in df.columns]
+        orden += [c for c in df.columns if c not in orden]
+        df = df[orden]
         df.to_excel(output_path, index=False)
         logger.info(f"Excel guardado exitosamente en {output_path}")
     except Exception as e:

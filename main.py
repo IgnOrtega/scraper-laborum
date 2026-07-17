@@ -11,17 +11,25 @@ from scraper import (
     ir_siguiente_pagina,
     guardar_excel
 )
-from utils import str2bool, logger, obtener_datos_previos
+from utils import str2bool, logger, cargar_historial, limpiar_raw_antiguo
+
+# Las ofertas (filas del Excel y carpetas raw_data) se conservan este tiempo
+DIAS_RETENCION = 30
+
+# Guardar el Excel maestro cada N páginas para no perder avance si el proceso cae
+GUARDAR_CADA_PAGINAS = 5
 
 
 async def main(DATA_DIR, HEADLESS_BOOL, MAX_PAGES=None, DELAY_EXPECTED=3.0):
     # Definición de rutas
-    RAW_DATA_DIR = Path(DATA_DIR) / "laborum" / "raw_data" / FECHA_HOY
+    BASE_DIR = Path(DATA_DIR) / "laborum"
+    RAW_DATA_DIR = BASE_DIR / "raw_data" / FECHA_HOY
     RAW_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
-    SUMMARY_BASE_DIR = Path(DATA_DIR) / "laborum" / "summary_data"
-    SUMMARY_DATA_DIR = SUMMARY_BASE_DIR / FECHA_HOY
-    SUMMARY_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    MASTER_XLSX = BASE_DIR / "summary_data.xlsx"
+
+    # Limpiar carpetas de raw_data con más de DIAS_RETENCION días
+    limpiar_raw_antiguo(BASE_DIR / "raw_data", dias=DIAS_RETENCION)
 
     # Si MAX_PAGES es None o 0, recorremos todas (infinito)
     if not MAX_PAGES or MAX_PAGES <= 0:
@@ -32,20 +40,17 @@ async def main(DATA_DIR, HEADLESS_BOOL, MAX_PAGES=None, DELAY_EXPECTED=3.0):
 
     logger.info(f"Retraso configurado (Esperanza): {DELAY_EXPECTED}s con Varianza del 5%.")
 
-    # Cargar datos de ejecuciones anteriores para evitar descargas innecesarias
-    datos_previos = obtener_datos_previos(SUMMARY_BASE_DIR)
-    if datos_previos:
-        logger.info(f"Se encontraron {len(datos_previos)} ofertas previas para omitir descarga.")
-
-    lista_datos = []
-    urls_vistas = set()  # compartido entre páginas para no duplicar ofertas que se desplazan al paginar
+    # Cargar historial: las filas previas se conservan (con su fecha original) y
+    # sus URLs se marcan como vistas para no volver a descargarlas.
+    lista_datos, urls_vistas = cargar_historial(MASTER_XLSX, dias=DIAS_RETENCION)
+    ofertas_previas = len(lista_datos)
 
     playwright, browser, context, page = await iniciar_browser(HEADLESS_BOOL)
 
     try:
         logger.info(f"Iniciando scraping en {BASE_URL}")
         await page.goto(BASE_URL, wait_until="networkidle")
-        
+
         # Manejo de publicidad más robusto
         try:
             # Esperar a que el botón de cerrar aparezca si el modal es visible
@@ -65,9 +70,12 @@ async def main(DATA_DIR, HEADLESS_BOOL, MAX_PAGES=None, DELAY_EXPECTED=3.0):
                 FECHA_HOY,
                 lista_datos,
                 RAW_DATA_DIR,
-                urls_vistas,
-                datos_previos
+                urls_vistas
             )
+
+            # Guardado incremental del Excel maestro
+            if pagina % GUARDAR_CADA_PAGINAS == 0 and len(lista_datos) > ofertas_previas:
+                guardar_excel(lista_datos, MASTER_XLSX)
 
             # Verificar si alcanzamos el límite antes de intentar navegar
             if pagina >= MAX_PAGES:
@@ -80,14 +88,14 @@ async def main(DATA_DIR, HEADLESS_BOOL, MAX_PAGES=None, DELAY_EXPECTED=3.0):
                 break
 
             pagina += 1
-            
+
             # CÁLCULO DE RETRASO CON DISTRIBUCIÓN UNIFORME
             # Varianza = 0.05 * Esperanza. Ancho del intervalo (b-a) = sqrt(0.6 * Esperanza)
             mu = DELAY_EXPECTED
             ancho = math.sqrt(0.6 * mu)
             a = mu - (ancho / 2)
             b = mu + (ancho / 2)
-            
+
             retraso = random.uniform(max(0.1, a), b)
             logger.info(f"Esperando {retraso:.2f} segundos (Intervalo: [{a:.2f}, {b:.2f}]) antes de la siguiente página...")
             await asyncio.sleep(retraso)
@@ -103,17 +111,17 @@ async def main(DATA_DIR, HEADLESS_BOOL, MAX_PAGES=None, DELAY_EXPECTED=3.0):
         # Guardar dentro del finally: así no se pierde lo scrapeado si el
         # proceso se interrumpe (Ctrl+C) o falla a mitad de camino.
         if lista_datos:
-            output_file = SUMMARY_DATA_DIR / "summary_data.xlsx"
-            guardar_excel(lista_datos, output_file)
-            logger.info(f"Scraping finalizado. {len(lista_datos)} ofertas procesadas.")
-            logger.info(f"Datos guardados en {output_file}")
+            guardar_excel(lista_datos, MASTER_XLSX)
+            nuevas_hoy = len(lista_datos) - ofertas_previas
+            logger.info(f"Scraping finalizado. {nuevas_hoy} ofertas nuevas hoy, {len(lista_datos)} en total (últimos {DIAS_RETENCION} días).")
+            logger.info(f"Datos guardados en {MASTER_XLSX}")
         else:
             logger.warning("No se encontraron datos para guardar.")
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Scraper de Laborum con Playwright y Concurrencia.")
-    parser.add_argument("--dir", type=str, required=True, help="Directorio raíz para los datos.")
+    parser.add_argument("--dir", type=str, default="data", help="Directorio raíz para los datos.")
     parser.add_argument(
         "--headless",
         type=str2bool,
@@ -134,7 +142,7 @@ if __name__ == "__main__":
         default=3.0,
         help="Tiempo esperado (Esperanza) de retraso entre páginas."
     )
-    
+
     args = parser.parse_args()
     try:
         asyncio.run(main(args.dir, args.headless, args.pages, args.delay))
@@ -142,5 +150,5 @@ if __name__ == "__main__":
         logger.info("Proceso interrumpido por el usuario.")
 # Delay sirve para esperar que cargue las ofertas de la pagina i, con i in {1,total paginas}
 # si delay es bajo el scraper puede pensar que la pagina i no tiene ofertas y termina el proceso
-# python "main.py" --dir "C:\Users\Nach\Desktop\datos" --headless "false" --pages 1 --delay 1.5
-# python "main.py" --dir "C:\Users\Nach\Desktop\datos" --headless "false" --delay 0
+# python "main.py" --dir "data" --headless "false" --pages 1 --delay 1.5
+# python "main.py" --dir "data" --headless "false" --delay 0
