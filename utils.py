@@ -1,5 +1,4 @@
 import re
-import argparse
 import logging
 import shutil
 from datetime import datetime, timedelta
@@ -33,13 +32,24 @@ def setup_logger(name: str = "laborum_scraper", log_file: str = "scraper.log", l
 logger = setup_logger()
 
 
+def clave_oferta(url: str) -> str:
+    """
+    Clave de deduplicación de una oferta: el id numérico al final de su URL
+    (p. ej. '...-1118371953.html' -> '1118371953'). Si no hay id, se usa la
+    URL normalizada completa.
+    """
+    limpia = url.split('?')[0].rstrip('/')
+    m = re.search(r"(\d+)\.html$", limpia)
+    return m.group(1) if m else limpia
+
+
 def cargar_historial(master_path: Path, dias: int = 30):
     """
     Carga el Excel maestro, descarta filas con más de `dias` días y devuelve:
-      (filas, urls_vistas)
+      (filas, ids_vistos)
     - filas: lista de dicts con las ofertas históricas (conservan su fecha original).
-    - urls_vistas: set de URLs normalizadas (sin query string ni slash final),
-      para que el scraper no vuelva a procesar esas ofertas.
+    - ids_vistos: set de claves de oferta (ver clave_oferta), para que el
+      scraper no vuelva a procesar esas ofertas.
     """
     if not master_path.exists():
         return [], set()
@@ -60,14 +70,14 @@ def cargar_historial(master_path: Path, dias: int = 30):
         df["Fecha"] = pd.to_datetime(df["Fecha"], errors="coerce").dt.strftime("%Y-%m-%d")
 
     filas = df.to_dict("records")
-    urls_vistas = set()
+    ids_vistos = set()
     for fila in filas:
         url = fila.get("Pageweb")
         if isinstance(url, str):
-            urls_vistas.add(url.split('?')[0].rstrip('/'))
+            ids_vistos.add(clave_oferta(url))
 
     logger.info(f"Historial cargado: {len(filas)} ofertas de los últimos {dias} días.")
-    return filas, urls_vistas
+    return filas, ids_vistos
 
 
 def limpiar_raw_antiguo(raw_base: Path, dias: int = 30) -> None:
@@ -90,16 +100,6 @@ def limpiar_raw_antiguo(raw_base: Path, dias: int = 30) -> None:
                 logger.info(f"Eliminada carpeta antigua de raw_data: {carpeta.name}")
             except Exception as e:
                 logger.error(f"Error al eliminar carpeta {carpeta}: {e}")
-
-
-def str2bool(value):
-    if isinstance(value, bool):
-        return value
-    if value.lower() in ("true", "1", "yes"):
-        return True
-    if value.lower() in ("false", "0", "no"):
-        return False
-    raise argparse.ArgumentTypeError("Booleano esperado.")
 
 
 def sanitize_filename(filename: str) -> str:

@@ -1,10 +1,26 @@
-import hashlib
+import html
 import re
+import time
+import unicodedata
+from datetime import datetime
 
 import pandas as pd
+import requests
 
+from config import FECHA_HOY
 from utils import sanitize_filename, logger
 from processor_utils import analizar_oferta
+
+API_URL = "https://www.laborum.cl/api/avisos/searchNormalizado"
+PAGE_SIZE = 50
+MAX_INTENTOS = 3
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept": "application/json, text/plain, */*",
+    "x-site-id": "BMCL",
+    "Origin": "https://www.laborum.cl",
+}
 
 # Orden de columnas del Excel maestro (las de análisis van entre Pageweb y oferta)
 COLUMNAS_EXCEL = [
@@ -14,133 +30,133 @@ COLUMNAS_EXCEL = [
 ]
 
 
-def _id_oferta(url: str) -> str:
-    """Obtiene un identificador único de la oferta a partir de su URL."""
-    m = re.search(r"(\d+)\.html$", url)
-    if m:
-        return m.group(1)
-    return hashlib.md5(url.encode("utf-8")).hexdigest()[:8]
-
-
-def _ruta_archivo(carpeta_destino, titulo: str, clean_url: str):
-    """Nombre de archivo único: título sanitizado + id de la oferta (evita colisiones)."""
-    return carpeta_destino / f"{sanitize_filename(titulo)[:120]}_{_id_oferta(clean_url)}.txt"
-
-
-async def scrapear_pagina(page, fecha_hoy, lista_datos, carpeta_destino, urls_vistas):
+def crear_session(base_url):
     """
-    Extrae la información de todas las ofertas directamente desde el listado de la página actual.
-
-    urls_vistas es un set compartido entre páginas y precargado con el historial:
-    evita duplicados al paginar y re-procesar ofertas de días anteriores.
+    Crea la sesión HTTP y visita primero la página del listado: el sitio entrega
+    ahí las cookies que la API exige para responder.
     """
-    # Esperar a que el listado cargue antes de leerlo (evita terminar antes de
-    # tiempo cuando la página tarda en renderizar las ofertas).
+    session = requests.Session()
+    session.headers.update({**HEADERS, "Referer": base_url})
+    resp = session.get(base_url, timeout=30)
+    resp.raise_for_status()
+    return session
+
+
+def filtro_fecha_desde_url(base_url):
+    """
+    Deriva el filtro de fecha de la API desde el slug de BASE_URL.
+    Ej: '.../empleos-publicacion-menor-a-2-dias.html' -> 'publicacion-menor-a-2-dias'
+    (el mismo valor que acepta la API en el filtro 'dias_fecha_publicacion').
+    """
+    m = re.search(r"empleos-(publicacion[a-z0-9\-]*)\.html", base_url)
+    if not m:
+        logger.warning("No se pudo derivar el filtro de fecha desde BASE_URL; se buscará sin filtro.")
+        return None
+    return m.group(1)
+
+
+def obtener_pagina(session, filtro_fecha, page, page_size=PAGE_SIZE):
+    """
+    Pide una página de resultados a la API (con reintentos).
+    Devuelve el JSON de la respuesta o None si todos los intentos fallan.
+    """
+    filtros = [{"id": "dias_fecha_publicacion", "value": filtro_fecha}] if filtro_fecha else []
+    body = {"filtros": filtros, "busquedaExtendida": False}
+    for intento in range(1, MAX_INTENTOS + 1):
+        try:
+            resp = session.post(
+                API_URL,
+                params={"pageSize": page_size, "page": page},
+                json=body,
+                timeout=30
+            )
+            resp.raise_for_status()
+            return resp.json()
+        except Exception as e:
+            logger.warning(f"Intento {intento}/{MAX_INTENTOS} fallido para la página {page}: {e}")
+            if intento < MAX_INTENTOS:
+                time.sleep(2 * intento)
+    logger.error(f"No se pudo obtener la página {page}.")
+    return None
+
+
+def _slug(texto: str) -> str:
+    texto = unicodedata.normalize("NFD", texto.lower()).encode("ascii", "ignore").decode()
+    texto = re.sub(r"[^a-z0-9]+", "-", texto).strip("-")
+    return texto or "oferta"
+
+
+def url_oferta(titulo: str, id_aviso: str) -> str:
+    """Reconstruye la URL pública de la oferta (mismo formato que usa el sitio)."""
+    return f"https://www.laborum.cl/empleos/{_slug(titulo)}-{id_aviso}.html"
+
+
+def _fecha_iso(fecha_str):
+    """Convierte 'DD-MM-YYYY' (formato de la API) a 'YYYY-MM-DD'."""
     try:
-        await page.wait_for_selector('a[href*="/empleos/"]', timeout=15000)
-    except Exception:
-        logger.warning("No se detectaron ofertas en la página (timeout esperando el listado).")
-        return
+        return datetime.strptime(fecha_str, "%d-%m-%Y").strftime("%Y-%m-%d")
+    except (TypeError, ValueError):
+        return FECHA_HOY
 
-    # Cada oferta en el listado está contenida en un bloque que tiene el enlace a /empleos/
-    elementos = await page.locator('a[href*="/empleos/"]').all()
 
+def procesar_avisos(avisos, lista_datos, carpeta_destino, ids_vistos):
+    """
+    Procesa los avisos de una página de la API: análisis por puntaje, archivo .txt
+    individual y fila para el Excel maestro.
+
+    ids_vistos es un set compartido y precargado con el historial: evita duplicados
+    y re-procesar ofertas de días anteriores.
+    """
     nuevas = 0
     omitidas = 0
 
-    for el in elementos:
+    for aviso in avisos:
         try:
-            url = await el.get_attribute("href")
-            if not url or "/empleos/" not in url:
+            id_aviso = str(aviso.get("id") or "")
+            if not id_aviso:
                 continue
-
-            if url.startswith("/"):
-                url = "https://www.laborum.cl" + url
-
-            # Limpiar URL y evitar duplicados (algunas cards tienen varios links a la misma oferta,
-            # y las ofertas de días anteriores ya vienen precargadas desde el historial)
-            clean_url = url.split('?')[0].rstrip('/')
-            if clean_url in urls_vistas:
+            if id_aviso in ids_vistos:
                 omitidas += 1
                 continue
-            urls_vistas.add(clean_url)
+            ids_vistos.add(id_aviso)
 
-            # --- EXTRACCIÓN DIRECTA DESDE EL LISTADO ---
-            # Título: El primer H2 dentro del contexto de la oferta
-            titulo_el = el.locator('h2').first
-            titulo = await titulo_el.text_content() if await titulo_el.count() > 0 else "sin_titulo"
-            titulo = titulo.strip().replace("/", "-")
+            titulo = html.unescape(aviso.get("titulo") or "sin_titulo").strip().replace("/", "-")
+            empresa = (aviso.get("empresa") or "Confidencial").strip()
+            ubicacion = (aviso.get("localizacion") or "N/A").strip()
+            tipo = (aviso.get("tipoTrabajo") or "N/A").strip()
+            modalidad = (aviso.get("modalidadTrabajo") or "").strip()
+            texto = html.unescape(aviso.get("detalle") or "").strip()
 
-            # Descripción: El primer P dentro del contexto de la oferta (resumen)
-            desc_el = el.locator('p').first
-            descripcion = await desc_el.text_content() if await desc_el.count() > 0 else "N/A"
-            descripcion = descripcion.strip()
+            link = url_oferta(titulo, id_aviso)
 
-            # Empresa: Suele estar en un H3 o span dentro de la card
-            empresa_el = el.locator('h3').first
-            empresa = await empresa_el.text_content() if await empresa_el.count() > 0 else "N/A"
-            empresa = empresa.strip()
+            # El análisis incluye título, modalidad y tipo además de la descripción,
+            # para no perder señal que solo aparece en esos campos.
+            analisis = analizar_oferta(f"{titulo}\n{modalidad} {tipo}\n{texto}")
 
-            # Análisis por puntaje/keywords (se incluye el título porque el
-            # resumen del listado es corto y el título aporta señal)
-            analisis = analizar_oferta(f"{titulo}\n{descripcion}")
-
-            # Guardar en la lista
-            lista_datos.append({
-                "Fecha": fecha_hoy,
-                "Nombre": titulo,
-                "Empresa": empresa,
-                "Ubicacion": "Ver en descripción",  # No siempre está explícita en el listado
-                "Tipo": "N/A",
-                "Pageweb": clean_url,
-                **analisis,
-                "oferta": descripcion
-            })
-
-            # Guardar archivo individual con el resumen
-            archivo = _ruta_archivo(carpeta_destino, titulo, clean_url)
+            archivo = carpeta_destino / f"{sanitize_filename(titulo)[:120]}_{id_aviso}.txt"
             archivo.write_text(
-                f"URL: {clean_url}\nEMPRESA: {empresa}\n\nDESCRIPCIÓN:\n{descripcion}",
+                f"URL: {link}\nEMPRESA: {empresa}\nUBICACION: {ubicacion}\nTIPO: {tipo}"
+                f"{' - ' + modalidad if modalidad else ''}\n\nDESCRIPCIÓN:\n{texto}",
                 encoding="utf-8"
             )
 
+            lista_datos.append({
+                "Fecha": _fecha_iso(aviso.get("fechaPublicacion")),
+                "Nombre": titulo,
+                "Empresa": empresa,
+                "Ubicacion": ubicacion,
+                "Tipo": f"{tipo} - {modalidad}" if modalidad else tipo,
+                "Pageweb": link,
+                **analisis,
+                "oferta": texto
+            })
             nuevas += 1
 
         except Exception as e:
-            logger.error(f"Error al extraer oferta del listado: {e}")
+            logger.error(f"Error al procesar aviso: {e}")
 
     logger.info(f"Página procesada: {nuevas} ofertas nuevas, {omitidas} ya conocidas/duplicadas.")
     return nuevas
-
-
-async def ir_siguiente_pagina(page) -> bool:
-    """
-    Intenta navegar a la siguiente página del paginador.
-    """
-    try:
-        # En Laborum, el botón siguiente suele ser un enlace con el icono 'caret-right'
-        # o simplemente el enlace que sigue al número de página actual.
-        boton_siguiente = page.locator('a:has(i[class*="caret-right"]), a[class*="caret-right"]').last
-
-        if await boton_siguiente.count() == 0:
-            return False
-
-        # En la última página el botón existe pero está deshabilitado: detectarlo
-        # aquí evita esperar el timeout completo del click.
-        if await boton_siguiente.get_attribute("aria-disabled") == "true" \
-                or await boton_siguiente.get_attribute("disabled") is not None:
-            return False
-
-        # Scroll hasta el botón para asegurar que sea clickable
-        await boton_siguiente.scroll_into_view_if_needed()
-        await boton_siguiente.click()
-        # Esperar carga
-        await page.wait_for_load_state("networkidle")
-        return True
-    except Exception as e:
-        logger.warning(f"No se pudo navegar a la siguiente página: {e}")
-
-    return False
 
 
 def guardar_excel(lista_datos, output_path):
