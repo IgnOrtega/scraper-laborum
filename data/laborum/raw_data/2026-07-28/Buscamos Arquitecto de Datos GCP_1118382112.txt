@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/buscamos-arquitecto-de-datos-gcp-1118382112.html
+EMPRESA: Nexatech-Latam
+UBICACION: Las Condes, Región Metropolitana
+TIPO: Full-time - Híbrido
+
+DESCRIPCIÓN:
+🚀 Buscamos Arquitecto de Datos GCP¿Tienes experiencia diseñando soluciones de datos en Google Cloud? ¡Esta oportunidad puede ser para ti!Requisitos: 2 a 3 años de experiencia como Arquitecto de Datos GCP. Experiencia excluyente en: BigQuery, Cloud Storage, Dataform, Data Fusion, Dataflow y Dataproc. Conocimientos deseables en: Dataplex, Sensitive Data Protection, Analytics Hub, Big Data, SQL Server, Oracle y bases de datos NoSQL. Capacidad de diagramación, comunicación efectiva y trabajo en equipo.📍 Modalidad: Híbrida (Las Condes) 📄 Contrato: ProyectoSi cumples con el perfil y te interesa formar parte de un desafío en tecnologías Google Cloud, envía tu CV a .
