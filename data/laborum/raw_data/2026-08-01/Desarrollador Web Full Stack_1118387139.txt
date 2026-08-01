@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/desarrollador-web-full-stack-1118387139.html
+EMPRESA: TodoTelecomunicaciones
+UBICACION: Chañaral, Región III
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+Desarrollador Web Full Stack Resumen del Puesto Estamos en la búsqueda de un talentoso Desarrollador Web Full Stack para unirse a nuestro equipo dinámico. El candidato ideal poseerá una sólida experiencia en el desarrollo tanto del lado del cliente como del servidor, con un enfoque en la creación de aplicaciones web robustas y escalables. Responsabilidades  Diseñar, desarrollar e implementar aplicaciones web completas. Colaborar con equipos multifuncionales para definir y lanzar nuevas funcionalidades. Escribir código limpio, eficiente y mantenible en el front-end y back-end. Optimizar las aplicaciones para obtener la máxima velocidad y escalabilidad. Participar en revisiones de código y compartir conocimientos con el equipo. Solucionar problemas y depurar aplicaciones existentes.  Requisitos  Experiencia demostrable como Desarrollador Web Full Stack. Dominio de lenguajes de programación front-end (HTML, CSS, JavaScript) y frameworks asociados (React, Angular, , etc.). Experiencia sólida con lenguajes de back-end (, Python, Java, Ruby, etc.) y sus frameworks. Conocimiento de bases de datos relacionales y NoSQL. Comprensión de arquitecturas de microservicios y APIs RESTful. Habilidades de resolución de problemas y pensamiento analítico. Capacidad para trabajar eficazmente en un entorno colaborativo.
