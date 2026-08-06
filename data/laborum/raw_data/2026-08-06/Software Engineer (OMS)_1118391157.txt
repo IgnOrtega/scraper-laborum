@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/software-engineer-oms-1118391157.html
+EMPRESA: Pinflag
+UBICACION: Las Condes, Región Metropolitana
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+Software Engineer (OMS) Resumen del Puesto Buscamos un(a) Software Engineer (OMS) con pasión por resolver problemas complejos y construir herramientas robustas que conecten el ecosistema logístico. Este rol se enfoca en el desarrollo de nuestro Order Management System (OMS), una pieza central de nuestra plataforma, que permite orquestar órdenes entre diferentes sistemas. Responsabilidades  Desarrollar y mantener el Order Management System (OMS). Colaborar en células ágiles, promoviendo la excelencia técnica y el impacto en el negocio. Construir herramientas robustas y escalables. Integrar y orquestar órdenes dentro del ecosistema logístico. Participar en el diseño y la implementación de soluciones de software.  Requisitos  0 a 2 años de experiencia profesional en desarrollo de software. Conocimientos sólidos en programación Fullstack (, Python, React o similar). Experiencia trabajando con bases de datos relacionales y no relacionales (PostgreSQL, MongoDB, etc.). Comprensión de estructuras de datos, principios de diseño de software y buenas prácticas de ingeniería. Familiaridad con APIs REST. Experiencia con Git. Capacidad para trabajar en equipo y de forma autónoma.

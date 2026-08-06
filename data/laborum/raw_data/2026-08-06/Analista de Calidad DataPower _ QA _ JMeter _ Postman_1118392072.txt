@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/analista-de-calidad-datapower-qa-jmeter-postman-1118392072.html
+EMPRESA: Indra
+UBICACION: Santiago de Chile, Región Metropolitana
+TIPO: Full-time - Híbrido
+
+DESCRIPCIÓN:
+Buscamos un Analista de Calidad en DataPower - Nivel Intermedio, quien será responsable de diseñar, ejecutar y documentar pruebas funcionales y técnicas para garantizar la calidad de soluciones de integración y servicios.Principales responsabilidades Diseñar y ejecutar casos de prueba. Ejecutar pruebas unitarias y pruebas de estrés. Validar integraciones de servicios SOAP y APIs. Detectar, documentar y realizar seguimiento de incidencias. Participar activamente en equipos de desarrollo bajo metodologías ágiles. Colaborar con equipos de desarrollo durante el ciclo de vida del software.Requisitos Título profesional de al menos 8 semestres en Ingeniería Informática o carrera afín. Al menos 3 años de experiencia en equipos de desarrollo de software. Al menos 2 años ejecutando pruebas funcionales, unitarias y de estrés. Experiencia utilizando:JMeter SonarQube Postman GitLab/GitHub  Conocimientos de servicios SOAP y APIs. Manejo de bases de datos MySQL, PostgreSQL, Oracle o SQL Server. Manejo de herramientas de desarrollo como Spring Tool Suite, NetBeans o Visual Studio.Se valorará Trabajo en equipo. Capacidad analítica. Atención al detalle. Orientación a la calidad. Comunicación efectiva.
