@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/relator-profesor-curso-python-para-analisis-de-datos-e-inteligencia-artificia-1118393183.html
+EMPRESA: Confidencial
+UBICACION: Providencia, Región Metropolitana
+TIPO: Por Horas - Presencial
+
+DESCRIPCIÓN:
+Estamos en la búsqueda de un profesor con conocimientos en las siguientes áreas.Python para Análisis de Datos  Introducción a la programación con Python. Variables, estructuras de datos y funciones. Manipulación y limpieza de datos. Análisis de datos con Pandas y NumPy. Visualización básica de datos. Desarrollo de ejercicios y casos prácticos.Inteligencia Artificial  Introducción a la Inteligencia Artificial y sus aplicaciones. IA Generativa y herramientas actuales. Ingeniería de prompts. Automatización de tareas con IA. Aplicaciones de IA en distintos ámbitos laborales. Uso integrado de IA y Python mediante ejercicios prácticos.
