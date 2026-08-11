@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/desarrollador-fullstack-1118396042.html
+EMPRESA: Empresa Nacional de Energía Enex SA
+UBICACION: Huechuraba, Región Metropolitana
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+¡Somos la energía que mueve tu mundo!¡Súmate a nuestro equipo y construyamos juntos el futuro de la energía!Buscamos un/a Desarrollador Fullstack a integrarse a una célula tecnológica orientada al desarrollo de soluciones modernas, escalables y de alto impacto para el negocio.La posición tiene como foco la construcción de soluciones end-to-end sobre una arquitectura modular y desacoplada, participando activamente en el desarrollo tanto de backend como de frontend, y en la integración con distintos sistemas y plataformas.Dentro de sus principales responsabilidades se encuentran: Desarrollar y mantener soluciones backend utilizando tecnologías enterprise Construir y evolucionar aplicaciones frontend utilizando frameworks modernos como React o Angular bajo estándares corporativos. Diseñar, construir y consumir APIs de manera eficiente y segura. Participar en la integración de sistemas con plataformas externas, canales móviles y otros servicios. Asegurar la correcta implementación de soluciones en línea con la arquitectura definida. Contribuir al mantenimiento y mejora continua de los sistemas desarrollados.Te invitamos a ser parte de un equipo tecnológico en crecimiento, trabajando con estándares modernos y contribuyendo al desarrollo de soluciones clave para el negocio.
