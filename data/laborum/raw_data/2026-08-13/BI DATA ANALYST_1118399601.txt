@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/bi-data-analyst-1118399601.html
+EMPRESA: RANDSTAD SERVICIOS LTDA
+UBICACION: Las Condes, Región Metropolitana
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+Randstad, consultora multinacional líder en soluciones de Recursos Humanos, presente en 39 países y con 4.400 oficinas en el mundo requiere contratar a un BI Data analyst.Objetivos Claves del cargoDesarrollo de modelos, indicadores y dashboards en PowerBI. Manejo de SQL, procesos ETL/ELT, APIs y distintas fuentes de información. Python y creación de RPA para optimizar procesos. desarrollo, programación y monitoreo de procesos con Prefect o herramientas equivalentes. Aplicación de controles de calidad, trazabilidad, documentación y buenas prácticas.Responsabilidades Diseñar, desarrollar y mantener procesos ETL/ELT Implementar controles de calidad y validación de datos Desarrollar y mantener dashboards en Power BI Automatizar procesos mediante Python y herramientas RPA Orquestar y monitorear flujos de datos con Prefect Soporte y manejo en Git/GitHub Documentar, mantener y dar soporte a las soluciones implementadas Manejo en implementación de Data Lake.Nivel de inglés Intermedio - Avanzado (Oral y escrito)Competencias informáticas(office, erp, otros) Python, SQL Server, SSIS, Prefect, SAP, RPAExperiencia 3 años-Esta oferta laboral se rige bajo la Ley Nº21.015 que incentiva la inclusión de personas con discapacidad al mundo laboral.
