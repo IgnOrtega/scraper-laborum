@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/desarrollador-full-stack-1118401430.html
+EMPRESA: E- SHOPPING EXPRESS S.A
+UBICACION: Las Condes, Región Metropolitana
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+Desarrollador Full Stack Resumen del Puesto Buscamos un Desarrollador Full Stack con experiencia demostrable de al menos 1 año para unirse a un equipo multidisciplinario. Buscamos una persona con ganas de aprender y crecer, proactiva, responsable y con capacidad de autogestión. Responsabilidades  Participar en el ciclo completo de desarrollo de software. Colaborar con equipos para definir, diseñar y lanzar nuevas funcionalidades. Escribir código limpio, mantenible y eficiente. Identificar y corregir cuellos de botella y errores. Contribuir a la mejora continua de los procesos de desarrollo.  Requisitos Técnicos  Experiencia demostrable en JavaScript (nivel intermedio a avanzado). Experiencia con Laravel o frameworks PHP similares. Experiencia con .NET (C# / Web API). Conocimiento en React Native (deseable para proyectos móviles). Manejo de Git y flujos de desarrollo colaborativo. Conocimiento en integración de APIs RESTful. Familiaridad con bases de datos relacionales y/o no relacionales.  Habilidades Blandas  Proactividad y responsabilidad. Capacidad de autogestión y aprendizaje continuo. Excelentes habilidades de comunicación y trabajo en equipo.  Modalidad Presencial
