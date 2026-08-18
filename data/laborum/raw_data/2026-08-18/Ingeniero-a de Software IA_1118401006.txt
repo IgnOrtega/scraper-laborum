@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/ingeniero-a-de-software-ia-1118401006.html
+EMPRESA: Empresas SB
+UBICACION: Santiago de Chile, Región Metropolitana
+TIPO: Full-time - Híbrido
+
+DESCRIPCIÓN:
+Nos encontramos en búsqueda de profesional para el cargo de Ingeniero/a de Software IA.¿Cuál será tu desafío en este cargo?Orquestar e implementar capacidades agénticas para el desarrollo de soluciones, interactuando de manera continua con los agentes de IA para validar los resultados del código generado dentro de los flujos de trabajo automatizados.Tus principales funciones: Construir y documentar herramientas (APIs, funciones) para los agentes. Diseñar Instrucciones y Prompts en el flujo de trabajo. Escribir, optimizar y versionar las instrucciones (prompts) de los agentes. Auditar cadena de razonamiento de los agentes. Diseñar e implementar estrategias basadas en especificaciones. Investigar, explorar y adoptar nuevas herramientas.En Empresas SB nos caracterizamos por ser una empresa que fomenta e impulsa el valor de equipos de trabajos diversos, aceptando el sello propio de cada persona, facilitando así ambientes laborales inclusivos, según la Ley 21.015, ¡Súmate y sé parte de nuestra organización!
