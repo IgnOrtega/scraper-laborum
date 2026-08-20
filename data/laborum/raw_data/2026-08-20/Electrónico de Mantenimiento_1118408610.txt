@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/electronico-de-mantenimiento-1118408610.html
+EMPRESA: LABORATORIO DUKAY S.A.
+UBICACION: Lampa, Región Metropolitana
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+Se requiere Técnico Electrónico de Mantenimiento con experiencia en:Programación de PLC (Ladder, C++).Sistemas de adquisición de datos.Sensores de variables físicas diversas. Termocuplas, presóstatos, niveles, posiciones, etc.Comunicación entre PLC’s.Comunicación con dispositivos actuadores.Control de motores paso a paso.Control de motores servo.Manejo de pantallas HMI.Dispositivos de control de acceso.
