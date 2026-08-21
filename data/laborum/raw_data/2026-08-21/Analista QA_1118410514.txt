@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/analista-qa-1118410514.html
+EMPRESA: KIBERNUM S.A.
+UBICACION: Las Condes, Región Metropolitana
+TIPO: Full-time - Híbrido
+
+DESCRIPCIÓN:
+En Kibernum estamos buscando un Analista QA con al menos 1 año de experiencia en automatización de pruebas. La persona será responsable de diseñar, implementar y ejecutar pruebas automatizadas, asegurando la calidad de nuestras aplicaciones y productos. Trabajarás en un entorno dinámico, colaborando estrechamente con equipos de desarrollo y QA. Requisitos:  Experiencia de al menos 2 años como Analista QA  Ideal experiencia en automatización de pruebas (Selenium y/o Playwright.)  Manejo en Jira.  Conocimiento en BD.  Experiencia en pruebas funcionales y de regresión.  Familiaridad con metodologías ágiles (Scrum o Kanban).  Capacidad de análisis, resolución de problemas y atención al detalle. Condiciones del puesto:  Contrato a plazo fijo inicialmente, con posibilidad de indefinido.  Modalidad híbrida  Entorno colaborativo con oportunidades de aprendizaje y crecimiento.
