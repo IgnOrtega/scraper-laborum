@@ -1,7 +1,0 @@
-URL: https://www.laborum.cl/empleos/ingeniero-de-nube-1118380576.html
-EMPRESA: At Mind SpA
-UBICACION: Vitacura, Región Metropolitana
-TIPO: Full-time - Presencial
-
-DESCRIPCIÓN:
-Ingeniero de Nube Resumen del Puesto Buscamos un Ingeniero de Nube proactivo y capacitado para sumarse a nuestro equipo de soluciones digitales e infraestructura cloud segura. En este rol, serás el encargado de diseñar, implementar y mantener la conectividad de redes híbridas mediante el despliegue de VPN Site-to-Site, además de gestionar la seguridad de identidades garantizando la integración de Entra ID (SSO) con políticas de MFA obligatorio. Responsabilidades  Diseñar, implementar y mantener la conectividad de redes híbridas. Gestionar la seguridad de identidades, asegurando la integración de Entra ID (SSO) con políticas de MFA obligatorio. Integrar conectores de SharePoint. Automatizar procesos clave, incluyendo la configuración en herramientas y la digitalización de flujos de trabajo. Gestionar matrices de prevención de delitos en el marco regulatorio aplicable.  Requisitos  Titulados en Ingeniería Informática, Redes o afín. Experiencia técnica en ecosistemas Microsoft Cloud. Experiencia en conectividad y proyectos de compliance. Sólidos conocimientos en redes híbridas y VPN Site-to-Site. Experiencia con Entra ID (SSO) y MFA. Capacidad para la automatización de procesos y digitalización de flujos de trabajo. Habilidades analíticas y de resolución de problemas. Capacidad para trabajar de forma independiente y como parte de un equipo.
