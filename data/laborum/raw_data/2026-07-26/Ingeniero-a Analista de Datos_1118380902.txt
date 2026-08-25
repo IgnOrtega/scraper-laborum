@@ -1,7 +1,0 @@
-URL: https://www.laborum.cl/empleos/ingeniero-a-analista-de-datos-1118380902.html
-EMPRESA: Gallyas Telecom S.A
-UBICACION: Huara, Región I
-TIPO: Full-time - Presencial
-
-DESCRIPCIÓN:
-Ingeniero/a Analista de Datos Resumen del Puesto Estamos en la búsqueda de un/a Ingeniero/a Analista de Datos con gran capacidad analítica y habilidades técnicas para unirse a nuestro equipo. El/la candidato/a ideal será responsable de extraer, transformar y analizar grandes volúmenes de datos para generar información valiosa que impulse la toma de decisiones estratégicas. Responsabilidades  Diseñar, desarrollar e implementar soluciones de análisis de datos. Extraer, limpiar y transformar datos de diversas fuentes. Desarrollar modelos predictivos y de machine learning. Crear visualizaciones y reportes para comunicar hallazgos clave. Colaborar con equipos multifuncionales para entender sus necesidades de datos. Identificar tendencias y patrones en los datos para ofrecer insights accionables. Mantener la integridad y calidad de los datos.  Requisitos  Título universitario en Ingeniería, Estadística, Matemáticas, Ciencias de la Computación o un campo relacionado. Experiencia demostrable en análisis de datos y modelado. Dominio de lenguajes de programación como Python o R. Conocimiento de herramientas de bases de datos (SQL). Experiencia con herramientas de visualización de datos (ej. Tableau, Power BI). Comprensión de técnicas de machine learning. Excelentes habilidades de comunicación y presentación. Capacidad para trabajar de forma autónoma y en equipo.
