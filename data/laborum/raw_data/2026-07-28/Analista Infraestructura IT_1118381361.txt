@@ -1,7 +1,0 @@
-URL: https://www.laborum.cl/empleos/analista-infraestructura-it-1118381361.html
-EMPRESA: RANDSTAD SERVICIOS LTDA
-UBICACION: Las Condes, Región Metropolitana
-TIPO: Full-time - Presencial
-
-DESCRIPCIÓN:
-Randstad, consultora multinacional líder en soluciones de Recursos Humanos, presente en 39 países y con 4.400 oficinas en el mundo requiere contratar a un Analista Infraestructura IT Funciones: -Continuidad y Seguridad: Asegurar la disponibilidad operativa y la ciberseguridad base de la infraestructura tecnológica. -Gestión Autónoma: Administrar de forma autónoma sistemas operativos, entornos virtualizados (VMware), servidores físicos y el estado general del data center. -Monitoreo Proactivo: Mantener un rendimiento óptimo de los sistemas y la red. Integridad de Datos: Operar y testear rutinas de respaldo (Veeam). -Ciberseguridad desde el Origen: Aplicar lineamientos preventivos y hardening (fortalecimiento) desde la etapa de despliegue inicial. Requisitos: -Carrera profesional afín al cargo. -3 años de experiencia mínimo. -Nivel de inglés avanzado (excluyente) -Manejo de excel, Power BI, Python (excluyente), Sistemas Operativos (Linux/Windows Server), VMware, Veeam, Ciberseguridad (Hardening/Vulnerabilidades), Monitoreo (Zabbix) y Redes. Datos adicionales: -Renta líquida: 1.100.000 - 1.200.000 -Presencial -Esta oferta laboral se rige bajo la Ley Nº21.015 que incentiva la inclusión de personas con discapacidad al mundo laboral.
