@@ -1,7 +1,0 @@
-URL: https://www.laborum.cl/empleos/ingeniero-de-sistemas-1118384031.html
-EMPRESA: Confidencial
-UBICACION: Santiago de Chile, Región Metropolitana
-TIPO: Full-time - Presencial
-
-DESCRIPCIÓN:
-Importante empresa del rubro TI busca incorporar un profesión para asegurar la disponibilidad de las redes de datos computacionales, proponiendo y ejecutando acciones que contribuyan a mantener y mejorar la disponibilidad de los servicios.Principales funciones Administrar, configurar y mantener la infraestructura de redes de nuestros clientes. Implementar y operar soluciones Cisco y Fortinet. Atender incidentes, realizar análisis de causa raíz y proponer acciones preventivas. Ejecutar mejoras, actualizaciones y proyectos de conectividad y ciberseguridad. Monitorear la disponibilidad, el rendimiento y la seguridad de las redes. Mantener actualizada la documentación técnica de configuraciones, procedimientos y topologías. Coordinarse con equipos internos y áreas TI de clientes para asegurar la continuidad operacional.Requisitos Título de Ingeniería en Sistemas, Ingeniería en Informática o carrera afín.Conocimientos técnicosSe requiere certificación vigente Cisco CCNA, CCNP o superiores. Fortinet NSE, FCF, FCA, FCP o equivalentes.Deseables Conocimientos en F5 o Citrix NetScaler.
