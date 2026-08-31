@@ -1,7 +1,0 @@
-URL: https://www.laborum.cl/empleos/ingeniero-analista-de-datos-1118387134.html
-EMPRESA: TRANSPORTES ERREYKA
-UBICACION: Salamanca, Región IV
-TIPO: Full-time - Presencial
-
-DESCRIPCIÓN:
-Ingeniero Analista de Datos Resumen del Puesto Estamos en la búsqueda de un Ingeniero Analista de Datos con experiencia para integrarse a nuestro equipo. El candidato ideal poseerá un profundo conocimiento en el manejo y análisis de grandes volúmenes de datos, así como la capacidad de extraer información valiosa para la toma de decisiones estratégicas. Responsabilidades  Diseñar, construir y mantener pipelines de datos robustos y escalables. Realizar análisis exploratorios de datos para identificar tendencias y patrones. Desarrollar modelos predictivos y de machine learning. Colaborar con equipos multifuncionales para comprender sus necesidades de datos y proporcionar soluciones. Visualizar y comunicar hallazgos de datos de manera clara y concisa a audiencias técnicas y no técnicas. Asegurar la calidad y la integridad de los datos.  Requisitos  Título universitario en Ciencias de la Computación, Estadística, Matemáticas, Ingeniería o un campo cuantitativo relacionado. Experiencia demostrable en análisis de datos e ingeniería de datos. Dominio de lenguajes de programación como Python o R. Experiencia con herramientas de bases de datos SQL y NoSQL. Conocimiento de plataformas de big data (ej. Spark, Hadoop). Habilidades sólidas en visualización de datos. Capacidad para trabajar de forma autónoma y en equipo, gestionando múltiples prioridades.
