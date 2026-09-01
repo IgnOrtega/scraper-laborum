@@ -1,7 +1,0 @@
-URL: https://www.laborum.cl/empleos/desarrollador-web-full-stack-1118387248.html
-EMPRESA: Global Security Service
-UBICACION: Río Hurtado, Región IV
-TIPO: Full-time - Presencial
-
-DESCRIPCIÓN:
-Desarrollador Web Full Stack Resumen del Puesto Estamos en la búsqueda de un Desarrollador Web Full Stack con experiencia para unirse a nuestro equipo dinámico. El candidato ideal poseerá un conocimiento profundo tanto del desarrollo front-end como back-end, y estará motivado para crear aplicaciones web robustas y escalables. Responsabilidades  Diseñar, desarrollar e implementar interfaces de usuario interactivas y atractivas. Construir y mantener la lógica del lado del servidor y las bases de datos. Colaborar con diseñadores y otros desarrolladores para asegurar una experiencia de usuario fluida. Optimizar las aplicaciones para máxima velocidad y escalabilidad. Identificar y corregir cuellos de botella y errores. Participar en todas las fases del ciclo de vida del desarrollo de software.  Requisitos  Experiencia demostrable como Desarrollador Web Full Stack. Dominio de lenguajes de programación front-end (HTML, CSS, JavaScript) y frameworks (React, Angular,  Experiencia sólida con lenguajes de back-end (, Python, Java, Ruby, etc.) y frameworks asociados. Conocimiento de bases de datos relacionales y NoSQL. Comprensión de los principios de diseño de APIs RESTful. Habilidades de resolución de problemas y pensamiento analítico. Capacidad para trabajar eficazmente en un entorno colaborativo.

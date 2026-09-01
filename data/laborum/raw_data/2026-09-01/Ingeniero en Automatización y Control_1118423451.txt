@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/ingeniero-en-automatizacion-y-control-1118423451.html
+EMPRESA: Global Security Service
+UBICACION: Andacollo, Región IV
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+Ingeniero en Automatización y Control Resumen del Puesto Estamos en la búsqueda de un Ingeniero en Automatización y Control con experiencia para integrarse a nuestro equipo. El candidato ideal poseerá un profundo conocimiento de sistemas de control industrial, PLC, SCADA y redes de comunicación, demostrando capacidad para el diseño, implementación y mantenimiento de soluciones de automatización. Responsabilidades  Diseñar, desarrollar e implementar sistemas de control y automatización. Programar y configurar controladores lógicos programables (PLC) y sistemas SCADA. Realizar el mantenimiento preventivo y correctivo de equipos de automatización. Colaborar con equipos multidisciplinarios para la puesta en marcha de proyectos. Analizar datos de procesos para optimizar el rendimiento y la eficiencia. Documentar el diseño y la operación de los sistemas implementados.  Requisitos  Título universitario en Ingeniería Electrónica, Mecatrónica, Industrial o afines. Experiencia comprobable en diseño e implementación de sistemas de automatización. Dominio de lenguajes de programación de PLC (Ladder, Structured Text, etc.). Conocimiento de software SCADA y HMI. Comprensión de redes industriales (Ethernet/IP, Profibus, Modbus, etc.). Capacidad para la resolución de problemas complejos y pensamiento analítico. Habilidades de comunicación efectiva y trabajo colaborativo.
