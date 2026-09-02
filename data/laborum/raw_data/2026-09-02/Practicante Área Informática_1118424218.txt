@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/practicante-area-informatica-1118424218.html
+EMPRESA: BLUMAR
+UBICACION: Talcahuano, Región VIII
+TIPO: Por Horas - Presencial
+
+DESCRIPCIÓN:
+¿Quieres ser parte de una compañía de clase mundial dedicada a la pesca y acuicultura, con más de 75 años de experiencia en la industria? ¡ESTA ES TU OPORTUNIDAD!En Blumar S.A. estamos buscando a nuestro próximo Practicante Área Informática , quien tendrá entre sus principales funciones Documentar el sistema de indicadores de gestión del área TI.  Levantar y analizar requerimientos asociados a la gestión de datos e indicadores. Modelar bases de datos para el sistema de indicadores de gestión. Diseñar y desarrollar dashboards e informes en Power BI.  Apoyar en la automatización, análisis y visualización de información para la toma de decisiones.Requisitos Educación: Universitaria Área de formación: Ingeniería Civil Informática o carrera afín Practica Presencial en Talcahuano¿Que buscamos en ti como practicante?  Estudiante de los últimos años de Ingeniería Civil Informática.  Conocimientos en Power BI para el desarrollo de dashboards e indicadores. Conocimientos básicos de SQL Server y/o PostgreSQL. Conocimientos básicos de Python.  Proactividad, curiosidad y motivación por participar en proyectos de mejora y análisis de información.
