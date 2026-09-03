@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/quality-engineer-qa-automation-1118427230.html
+EMPRESA: KIBERNUM S.A.
+UBICACION: Las Condes, Región Metropolitana
+TIPO: Full-time - Híbrido
+
+DESCRIPCIÓN:
+En Kibernum buscamos un/a Quality Engineer con experiencia en automatización de pruebas, APIs e incorporación de IA como apoyo al proceso de calidad.Requisitos: Experiencia como Quality Engineer / QA Automation. Java 17 o superior: mínimo 1 año. Postman: mínimo 2 años. Experiencia en Web Service Testing / pruebas de APIs. Experiencia en automatización con Selenium y JUnit. Manejo de JIRA + Zephyr, TestLink o herramientas similares. Experiencia utilizando IA generativa aplicada al testing o automatización, por ejemplo para generación de casos/scripts de prueba, debugging, análisis o documentación.Deseable: Jenkins, LambdaTest, GCP, GitHub Copilot, Quality Center y metodologías ágiles.📍 Modalidad: principalmente remota, con asistencia a oficina según necesidad en Las Condes, RM.📅 Proyecto: hasta diciembre de 2026, con posibilidad de extensión hasta marzo de 2027.

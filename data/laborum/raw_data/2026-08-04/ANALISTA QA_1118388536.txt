@@ -1,7 +1,0 @@
-URL: https://www.laborum.cl/empleos/analista-qa-1118388536.html
-EMPRESA: MatchFinders
-UBICACION: Santiago, Región Metropolitana
-TIPO: Full-time - Híbrido
-
-DESCRIPCIÓN:
-Para MAF Chile, empresa líder en financiamiento automotriz, estamos buscando un Analista QA que quiera ser parte de un equipo tecnológico orientado a la innovación, la mejora continua y el desarrollo de soluciones de alto impacto para el negocio.¿Cuál será tu principal desafío?Serás responsable de garantizar la calidad de las soluciones de software antes de su liberación, participando activamente en el ciclo de desarrollo para detectar oportunidades de mejora, prevenir incidencias y contribuir a la entrega de productos de alto estándar.Principales responsabilidades:  Diseñar y ejecutar casos de prueba funcionales, no funcionales y de servicios (APIs).  Participar en ceremonias ágiles colaborando con equipos multidisciplinarios.  Documentar resultados, gestionar incidencias y realizar seguimiento a las correcciones.  Preparar y gestionar ambientes de prueba.  Automatizar pruebas de aplicaciones web y APIs.Buscamos experiencia en: Jira, Bases de datos SQL u Oracle Experiencia excluyente en automatización de pruebas con herramientas como Selenium, Python, Katalon o similares. Formación: Ingeniería Informatica, Técnico en Informática o afín Desde 2 años de experiencia en roles similaresModalidad híbrida, Las Condes. ¡Postula y sumate al equipo! Requisitos:
