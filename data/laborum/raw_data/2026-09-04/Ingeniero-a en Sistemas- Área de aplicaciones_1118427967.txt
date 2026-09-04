@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/ingeniero-a-en-sistemas-area-de-aplicaciones-1118427967.html
+EMPRESA: Global Consulting SA
+UBICACION: Vitacura, Región Metropolitana
+TIPO: Full-time - Remoto
+
+DESCRIPCIÓN:
+Para Clínica Alemana de Santiago, nos encontramos en búsqueda de Ingeniero/a Senior en Sistemas para el área de Aplicaciones, quien será responsable de diseñar, automatizar y optimizar continuamente la arquitectura de sistemas e infraestructura tecnológica bajo su cargo, garantizando la máxima disponibilidad, rendimiento a escala y resiliencia de las aplicaciones críticas de la Clínica bajo estándares de ciberseguridad. Modalidad: 100% TeletrabajoResponsabilidades: Garantizar la alta disponibilidad, seguridad y rendimiento óptimo de las aplicaciones e infraestructura de Clínica Alemana a través de la implementación de arquitecturas eficientes, automatización de procesos y la gestión proactiva de la continuidad del negocio. Asegurar altos niveles de disponibilidad, rendimiento y seguridad de los sistemas y aplicaciones de Clínica Alemana. Crear y habilitar las herramientas de software orientadas a la automatización.Requisitos: Título profesional de Ingeniería civil o ejecución Informática. Especialización en Servidores, Sistemas operativos y aplicaciones básicas. Contar con al menos seis años de experiencia laboral realizando funciones similares.
