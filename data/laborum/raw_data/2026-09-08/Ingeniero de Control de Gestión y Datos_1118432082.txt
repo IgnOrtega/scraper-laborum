@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/ingeniero-de-control-de-gestion-y-datos-1118432082.html
+EMPRESA: Confidencial
+UBICACION: Santiago de Chile, Región Metropolitana
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+Ingeniero de Control de Gestión y DatosResumen del PuestoBuscamos un profesional con sólida experiencia en ingeniería informática y control de gestión para unirse a nuestro equipo. El candidato ideal poseerá habilidades avanzadas en el manejo de bases de datos masivas, gestión de datos y herramientas de análisis, con un enfoque en la predicción de comportamientos y la optimización de la gestión de proveedores.Responsabilidades Gestionar y analizar grandes volúmenes de datos para extraer información valiosa. Desarrollar e implementar modelos predictivos basados en datos para anticipar tendencias y comportamientos. Evaluar y optimizar la gestión de proveedores a través del análisis de datos. Colaborar con diferentes áreas para asegurar la integridad y el uso efectivo de la información. Diseñar y mantener bases de datos eficientes y escalables. Generar informes y visualizaciones para facilitar la toma de decisiones estratégicas.Requisitos Formación en Ingeniería Informática, Control de Gestión o campo afín. Experiencia demostrable en el manejo de bases de datos masivas y gestión de datos. Nivel avanzado en el uso de Excel. Conocimientos intermedios de SQL y Power BI. Se valorará el manejo de Python. Capacidad analítica y de resolución de problemas. Habilidades de comunicación y trabajo en equipo. Autonomía y proactividad en la ejecución de tareas.
