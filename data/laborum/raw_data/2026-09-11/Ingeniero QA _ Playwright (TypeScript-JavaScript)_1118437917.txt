@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/ingeniero-qa-playwright-typescript-javascript-1118437917.html
+EMPRESA: KIBERNUM S.A.
+UBICACION: Santiago de Chile, Región Metropolitana
+TIPO: Full-time - Híbrido
+
+DESCRIPCIÓN:
+RED, seguimos buscando talento QASi eres de esas personas que disfrutan encontrar un problema antes de que llegue al usuario final… esta búsqueda puede ser para ti.Estamos buscando un/a QA Senior Automatizador/a | 5+ años para sumarse a un desafío tecnológico.¿Qué buscamos? Experiencia en QA funcional y automatización de pruebas. Diseño y ejecución de casos de prueba. Automatización Web con Playwright (TypeScript/JavaScript). Automatización Mobile con Appium (Java). Pruebas API con Postman / Newman. Experiencia integrando pruebas en pipelines CI/CD. Manejo de Jira, Git y bases de datos.**Si además tienes experiencia en performance testing (JMeter/Locust), suma muchísimo.Buscamos a alguien que entienda que QA no es solo encontrar errores… es ayudar a construir software de calidad. Modalidad híbrida: 2 días presenciales en Región Metropolitana. Contrato inicial plazo fijo por 2 meses, con posibilidad de pasar a indefinido según desempeño.Si este desafío te hace sentido, conversemos.
