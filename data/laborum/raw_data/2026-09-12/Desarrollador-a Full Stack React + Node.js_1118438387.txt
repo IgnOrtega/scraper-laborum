@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/desarrollador-a-full-stack-react-node-js-1118438387.html
+EMPRESA: KIBERNUM S.A.
+UBICACION: Santiago de Chile, Región Metropolitana
+TIPO: Full-time - Híbrido
+
+DESCRIPCIÓN:
+Buscamos un/a Desarrollador/a Full Stack | 2+ años de experiencia para sumarse a un equipo tecnológico desarrollando y evolucionando aplicaciones web, participando tanto en frontend como backend.¿Qué buscamos? React / Next.jsNode.js / NestJS TypeScript / JavaScript Desarrollo e integración de APIs REST PostgreSQL / MongoDB Formación en Ingeniería Informática o carrera afín.Además, experiencia o conocimientos en: Arquitectura Hexagonal Clean Code y principios SOLID Patrones de diseño Git, Docker y buenas prácticas de desarrollo Herramientas de IA aplicadas al desarrollo, como GitHub Copilot, Claude u otrasCondiciones: Modalidad híbrida: 2 días presenciales en Santiago Centro. Contrato inicial a plazo fijo por 2 meses, con posibilidad de pasar a indefinido según desempeño.Si te interesa desarrollar soluciones escalables, mejorar código y seguir incorporando nuevas tecnologías, ¡postula!
