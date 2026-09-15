@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/administrador-de-sistemas-la-florida-1118440934.html
+EMPRESA: ECR SALUD
+UBICACION: La Florida, Región Metropolitana
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+Se busca Administrador de Sistemas para conformar equipo de trabajo y postular a licitación, para prestar servicios en institución de salud ubicada en La Florida, Región Metropolitana.Principales funciones: mantener la continuidad operativa de servidores físicos, virtuales y cloud; administrar e implementar sistemas; participar y liderar proyectos de infraestructura TI; administrar respaldos, virtualización, bases de datos, correo electrónico, monitoreo y servicios asociados a servidores Windows y Linux.Se requiere experiencia y conocimientos en tecnologías tales como Windows Server, Linux Server, Active Directory, DHCP, DNS, IIS, Apache, NGINX, Oracle, SQL Server, MySQL, Office 365, Zimbra, Exchange, VMware, Hyper-V, Proxmox, Veeam, Zabbix, Nagios y PRTG, entre otras plataformas de infraestructura.Requisito de estudios: título de carrera del área de Tecnologías de la Información, otorgado por Universidad, Instituto Profesional, CFT, Técnico de Nivel Superior o Técnico Profesional reconocido por el Estado.Jornada: lunes a viernes de 08:00 a 17:00 horas, con disponibilidad para atender turnos de emergencia fuera de horario cuando sea requerido.
