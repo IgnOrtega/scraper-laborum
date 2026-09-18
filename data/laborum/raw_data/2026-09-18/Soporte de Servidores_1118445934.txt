@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/soporte-de-servidores-1118445934.html
+EMPRESA: Confidencial
+UBICACION: Las Condes, Región Metropolitana
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+¿Te interesa la administración de infraestructura tecnológica y la resolución de incidencias de segundo nivel? ¡Esta oportunidad puede ser para ti!🎯 Objetivo del cargoGestionar, mantener y monitorear la plataforma tecnológica, asegurando su óptimo funcionamiento, continuidad operativa y cumplimiento de SLA.🔹 Principales funciones Monitorear y detectar fallas en plataformas tecnológicas.  Atender y resolver incidentes y solicitudes de servicio N2.  Aplicar procedimientos y realizar escalamientos cuando corresponda.  Identificar y reportar riesgos para la continuidad operativa.  Apoyar la administración y mantenimiento de servidores y plataformas.Requerimientos🎓 Requisitos Formación técnica o profesional en Informática, Sistemas o carrera afín.  Al menos 3 años de experiencia en cargos similares. Experiencia en administración de plataformas y resolución de incidencias N2. Experiencia en entornos virtualizados y servidores.💻 Conocimientos Windows Server y Linux Server.  Active Directory.  VMware.  Azure. Deseable: AWS, herramientas de respaldo e inglés hablado. Deseable certificación en administración de sistemas o redes.📍 Si cuentas con experiencia en infraestructura y te interesa asumir nuevos desafíos, postula y sé parte de nuestro equipo.
