@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/desarrollador-front-end-semi-senior-react-angular-y-vue-1118449926.html
+EMPRESA: KIBERNUM S.A.
+UBICACION: Huechuraba, Región Metropolitana
+TIPO: Full-time - Híbrido
+
+DESCRIPCIÓN:
+En Kibernum buscamos un/a Desarrollador/a Front End Semi Senior para integrarse a un importante proyecto tecnológico enfocado en logística, distribución y transporte.Requisitos: Más de 3 años de experiencia en desarrollo Front End. Experiencia con React, Angular y Vue. Dominio de TypeScript. Experiencia en consumo e integración de APIs REST. Conocimiento de Azure DevOps. Título profesional del área de informática. Deseable experiencia en proyectos de alta complejidad, logística, transporte, mapas o geolocalización.Condiciones: Modalidad híbrida: 3 días presenciales y 2 remotos. Ubicación: Ciudad Empresarial, Huechuraba. Dedicación 100% exclusiva al proyecto. Contrato inicial de 3 meses, con posibilidad de extensión y posible internalización con cliente. Ingreso estimado: noviembre 2026.📩 Si cumples con el perfil y te interesa participar en un proyecto tecnológico de gran escala, ¡queremos conocerte!

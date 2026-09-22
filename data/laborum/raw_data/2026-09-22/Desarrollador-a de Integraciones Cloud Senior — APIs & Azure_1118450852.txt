@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/desarrollador-a-de-integraciones-cloud-senior-apis-azure-1118450852.html
+EMPRESA: KIBERNUM S.A.
+UBICACION: Huechuraba, Región Metropolitana
+TIPO: Full-time - Híbrido
+
+DESCRIPCIÓN:
+En Kibernum buscamos un/a Desarrollador/a de Integraciones / Cloud para integrarse a un importante proyecto tecnológico, participando en la construcción e integración de servicios y soluciones cloud de alta disponibilidad.Requisitos Más de 5 años de experiencia profesional. Dominio avanzado de: APIs REST | OpenAPI | Swagger | Webhooks| JSON | XML Conocimientos en .NET 10 o Java. Deseable experiencia con: Azure API Management | Azure Functions | Azure Key Vault | Managed Identity Conocimiento de Azure DevOps. Título profesional del área de informática. Deseable experiencia en proyectos enterprise, integración de sistemas, logística o transporte.Condiciones Modalidad híbrida: 3 días presenciales y 2 remotos. Ubicación: Ciudad Empresarial, Huechuraba. Dedicación 100% exclusiva al proyecto. Contrato inicial de 3 meses, con posibilidad de extensión y continuidad posterior. Ingreso estimado: noviembre 2026.📩 Si cuentas con experiencia en integración de sistemas y servicios cloud, ¡queremos conocerte!

@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/desarrollador-a-mobile-kotlin-multiplatform-1118450048.html
+EMPRESA: KIBERNUM S.A.
+UBICACION: Huechuraba, Región Metropolitana
+TIPO: Full-time - Híbrido
+
+DESCRIPCIÓN:
+En Kibernum buscamos un/a Desarrollador/a Mobile Semi Senior para integrarse a un importante proyecto tecnológico orientado a operaciones en terreno, logística y transporte.Requisitos Más de 3 años de experiencia en desarrollo Mobile. Experiencia con Kotlin Multiplatform. Manejo de Firebase Analytics y Crashlytics. Experiencia con MSAL y Microsoft Entra ID. Manejo de Gradle y Maven. Experiencia en autenticación e integración de servicios móviles. Título profesional del área de informática. Deseable experiencia en aplicaciones empresariales, logística, transporte o soluciones para operaciones en terreno.El stack solicitado para el rol Mobile contempla específicamente Kotlin Multiplatform, Firebase Analytics, Crashlytics, MSAL, Microsoft Entra ID, autenticación externa, Gradle y Maven.Condiciones Modalidad híbrida: referencialmente 3 días presenciales y 2 remotos. Ubicación: Ciudad Empresarial, Huechuraba. Dedicación 100% exclusiva al proyecto. Contrato inicial de 3 meses, con posibilidad de extensión y continuidad posterior. Ingreso estimado: noviembre 2026.📩 Si cuentas con experiencia en desarrollo Mobile y este stack, ¡queremos conocerte!
