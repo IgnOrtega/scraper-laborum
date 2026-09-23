@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/desarrollador-a-full-stack-junior-1118451402.html
+EMPRESA: Smart Solutions &amp; Services SA
+UBICACION: Santiago de Chile, Región Metropolitana
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+Modalidad: 100% presencial Renta: $1.000.000 a $1.400.000 bruto mensualDescripción del cargo Buscamos 2 Desarrolladores/as Full Stack Junior con ganas de aprender y crecer dentro de un equipo de desarrollo, participando en el ciclo completo de desarrollo de aplicaciones web (frontend y backend). Nuestro stack principal es Angular, Node.js/TypeScript y PostgreSQL.Requisitos Título profesional o técnico en Ingeniería en Informática, Ingeniería Civil Informática, Analista Programador u otra carrera afín 0 a 2 años de experiencia en desarrollo web (se aceptan egresados/as con proyectos personales o prácticas relevantes) Conocimientos básicos-intermedios en Angular (componentes, servicios, routing, RxJS básico) Conocimientos básicos-intermedios en Node.js con TypeScript (Express o NestJS) Nociones de PostgreSQL (consultas SQL, diseño básico de tablas) Manejo de Git/GitHub Conocimientos básicos de HTML, CSS y JavaScriptDeseable Conocimientos básicos de AWS (S3, EC2 u otros) Conocimiento de APIs REST Inglés técnico (lectura de documentación)Habilidades Proactividad y disposición para aprender Trabajo en equipo Buena comunicaciónSe ofrece Incorporación a equipo de desarrollo en crecimiento Trabajo con stack moderno (Angular, Node.js/TypeScript, PostgreSQL) Ambiente colaborativo, con acompañamiento de perfiles semi-senior/senior
