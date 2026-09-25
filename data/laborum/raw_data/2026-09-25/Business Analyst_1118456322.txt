@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/business-analyst-1118456322.html
+EMPRESA: Kabeli Selección Limitada
+UBICACION: Las Condes, Región Metropolitana
+TIPO: Full-time - Híbrido
+
+DESCRIPCIÓN:
+En Kabeli Selección estamos en búsqueda de un/a Business Analyst para el área bancaria, bajo modalidad híbrida, con oficinas ubicadas en Las Condes 📷 ¿Qué harás? Levantar requerimientos con las áreas de negocio y traducirlos en soluciones de análisis. Diseñar, escribir y optimizar queries SQL para extraer, cruzar y validar información. Construir y mantener dashboards y reportes en Power BI. Automatizar procesos de análisis y limpieza de datos con Python (pandas, notebooks, scripts). Trabajar con datos alojados en AWS Definir y monitorear KPIs, detectar oportunidades de mejora y presentar hallazgos a distintos niveles de la organización.📷 Requisitos Experiencia previa en ingeniería de datos o roles similares. Conocimiento profundo de desarrollo de dashboards en Power BI. Habilidades avanzadas en diseño gráfico y presentación visual de datos. Capacidad para interpretar datos complejos y comunicar insights de manera efectiva. Habilidades de programación en Python.📷 Beneficios Kabeli 2 días administrativos al año. Día libre por tu cumpleaños 📷. Bonos de Fiestas Patrias y Navidad 📷. Seguro complementario de salud, vida y dental 📷. Otros beneficios corporativos.
