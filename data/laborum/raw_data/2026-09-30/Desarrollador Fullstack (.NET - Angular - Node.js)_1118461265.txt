@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/desarrollador-fullstack-net-angular-node-js-1118461265.html
+EMPRESA: KIBERNUM S.A.
+UBICACION: Las Condes, Región Metropolitana
+TIPO: Full-time - Híbrido
+
+DESCRIPCIÓN:
+Nos encontramos en la búsqueda de un/a Desarrollador/a Full Stack para sumarse a un proyecto clave de 4 meses de duración. ¿Cuáles serán tus funciones principales?  Desarrollar y mantener soluciones integrales participando tanto en el Frontend como en el Backend.  Diseñar, construir y consumir APIs REST para aplicaciones empresariales.  Integrar sistemas y trabajar sobre bases de datos relacionales (Oracle).  Colaborar activamente con equipos de desarrollo multidisciplinarios bajo metodologías ágiles. Requisitos Experiencia de al menos 3 años en desarrollo de aplicaciones empresariales.  Dominio en arquitectura y consumo de APIs REST.  Trabajo continuo con metodologías ágiles (Scrum/Kanban).  Stack Tecnológico: Backend: .NET Core / .NET (C#) y Node.js. Frontend: Angular. Base de Datos: Oracle Database / SQL. Condiciones laborales  Modalidad: Híbrida en Las Condes, Stgo  Duración: Proyecto por 4 meses

@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/programador-plc-y-hmi-1118462161.html
+EMPRESA: Confidencial
+UBICACION: Colina, Región Metropolitana
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+Empresa con importante experiencia en el rubro Industrial, sector norte R.M, cercana a parque indsutrial Los Libertadores, busca incorporar un profesional con experiencia en automatización industrial, con foco en la programación de PLCs y configuración de HMIs, para participar en proyectos de mejora y mantenimiento de sistemas de control en planta Industrial. Este perfil será clave para garantizar la operación eficiente y segura de los procesos automatizados.Perfil requerido: Formación:Ingeniero en Automatización, Control Industrial, Electrónica o carreras afín. También se consideran técnicos con amplia experiencia. Experiencia:Programación de PLCs (Siemens, Allen-Bradley, Schneider u otros). Desarrollo y configuración de interfaces HMI. Lectura e interpretación de planos eléctricos y diagramas de control. Deseable: experiencia en integración con sistemas SCADA o MES. Experiencia: Cargos en mantencion, supervision de plantas producctivasCompetencias técnicas: Conocimiento en protocolos de comunicación industrial (Modbus, Profibus, Ethernet/IP). Manejo de software de programación (TIA Portal, RSLogix, etc.). Diagnóstico y resolución de fallas en sistemas automatizados.Competencias blandas: Capacidad de trabajo en terreno y en equipo multidisciplinario. Enfoque en seguridad, confiabilidad y mejora continua.
