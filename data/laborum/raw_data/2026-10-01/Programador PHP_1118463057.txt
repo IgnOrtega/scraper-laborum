@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/programador-php-1118463057.html
+EMPRESA: Quantumdyl spa
+UBICACION: Providencia, Región Metropolitana
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+Programador PHP Resumen del Puesto Buscamos un Programador PHP con experiencia en el desarrollo de aplicaciones web y un sólido conocimiento en el manejo de bases de datos relacionales. El candidato ideal será proactivo, con capacidad de análisis y resolución de problemas, y con ganas de integrarse a un equipo dinámico. Responsabilidades  Desarrollar y mantener aplicaciones web utilizando PHP. Diseñar, implementar y optimizar consultas a bases de datos relacionales. Colaborar con otros miembros del equipo en el ciclo de vida del desarrollo de software. Identificar y solucionar problemas técnicos en aplicaciones existentes. Participar en la definición de la arquitectura y las mejores prácticas de desarrollo.  Requisitos  Experiencia comprobable en programación con PHP. Sólido conocimiento y experiencia práctica con bases de datos relacionales (ej. MySQL, PostgreSQL). Comprensión de los principios de diseño de bases de datos. Habilidad para escribir código limpio, mantenible y eficiente. Capacidad para trabajar de forma autónoma y en equipo. Buenas habilidades de comunicación.
