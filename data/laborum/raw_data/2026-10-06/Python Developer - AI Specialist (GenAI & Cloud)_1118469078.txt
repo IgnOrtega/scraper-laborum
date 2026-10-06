@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/python-developer-ai-specialist-genai-cloud-1118469078.html
+EMPRESA: KIBERNUM S.A.
+UBICACION: Las Condes, Región Metropolitana
+TIPO: Full-time - Remoto
+
+DESCRIPCIÓN:
+Buscamos Desarrollador/a Python con experiencia práctica integrando Modelos de Lenguaje (LLMs) y servicios Cloud para construir la siguiente generación de productos basados en IA Generativa.No buscamos a alguien que solo consuma APIs básicas, sino a un perfil técnico que entienda cómo orquestar arquitecturas con LangChain/LlamaIndex, trabajar con Bases de Datos Vectoriales (Pinecone, PGvector) y desplegar servicios escalables en AWS o Azure.Lo que harás en el día a día: Diseñar e implementar soluciones con arquitectura RAG y agentes inteligentes. Integrar modelos como GPT/BERT con infraestructura serverless (AWS Lambda, Bedrock, SageMaker). Automatizar pipelines de CI/CD para el despliegue continuo de servicios de IA.¿Qué necesitas para postular? Dominio fluido de Python y buenas prácticas de desarrollo, al menos 3 años de experiencia. Experiencia real (proyectos o producción) usando LangChain, LlamaIndex o frameworks LLM similares. Manejo de servicios Cloud (AWS o Azure) para integración mediante APIs. Conocimiento en almacenamiento vectorial (PGvector, Weaviate, Pinecone o similares).Condiciones: 📍 100% Remoto (Chile)  📄 Contrato Indefinido  🎁 Beneficios Corporativos
