@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/soporte-y-administracion-de-redes-retail-1118473692.html
+EMPRESA: Confidencial
+UBICACION: Independencia, Región Metropolitana
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+Soporte y Administración de RedesBuscamos un/a profesional para asegurar la disponibilidad, seguridad y continuidad operacional de nuestra infraestructura tecnológica, redes y servicios cloud.🎓 Requisitos Formación técnica o universitaria en Conectividad y Redes, Telecomunicaciones, Administración de Redes o carreras afines. Experiencia previa en funciones de soporte y administración TI.🛠️ Competencias Técnicas Redes y Conectividad: Switching, VLANs, segmentación y protocolos. Seguridad y Routing: Configuración de Firewalls, ruteo y políticas de acceso. Inalámbricas: Gestión de Access Points y redes Wi-Fi. Servidores y Cloud: Windows, Linux, virtualización, AWS y Huawei Cloud. Monitoreo: Zabbix, Nagios y Wireshark. Entorno Corporativo: Microsoft 365, Active Directory y Telefonía IP.👤 Habilidades Clave Resolución de problemas y trabajo bajo presión. Orientación al servicio, proactividad y trabajo en equipo. Apego a buenas prácticas de seguridad informática y documentación.¡Postula con nosotros y sé parte de nuestro equipo de tecnología!
