@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/analista-mesa-de-servicio-departamento-ti-1118478134.html
+EMPRESA: Hospital Militar de Santiago
+UBICACION: La Reina, Región Metropolitana
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+Entregar soporte funcional de nivel uno a usuarios HMS desde Mesa de Servicio, apoyando a su vez, tareas básicas relacionadas con la infraestructura de Datacenter del Hospital, con el fin de restablecer la continuidad operativa de las distintas áreas de la institución, en el menor tiempo posible.Requisitos: Título Técnico Nivel Superior en Informática, Técnico Nivel Superior en Mantención Red Computacional o Técnico Nivel Superior en Administración de Redes. Experiencia mínima de 3 años en cargos similares. Experiencia en entornos de servicio a usuarios bajo marcos de procedimientos orientados a la calidad, idealmente ITIL. Conocimientos avanzados en sistemas básicos de usuario (Office, Windows, herramientas de apoyo). Conocimientos en configuración de equipos de escritorio (PC, impresoras, otros dispositivos asociados). Conocimientos técnicos o de gestión en configuración de redes a nivel de Windows. Conocimientos técnicos o de gestión en Seguridad Informática.
