@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/desarrollador-web-junior-region-metropolitana-1118486854.html
+EMPRESA: ECR SALUD
+UBICACION: Santiago de Chile, Región Metropolitana
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+Desarrollador Web Junior – Región MetropolitanaImportante empresa de servicios busca un/a Desarrollador/a Web Junior para participar en licitación pública orientada al desarrollo y mantención de plataformas tecnológicas institucionales.Principales funciones: Desarrollar y mantener aplicaciones y plataformas web. Implementar nuevas funcionalidades Frontend y Backend. Desarrollar interfaces web utilizando Angular y React. Implementar servicios Backend con Node.js y NestJS. Integrar API REST y administrar bases de datos. Realizar pruebas, correcciones y mejoras de sistemas. Documentar los desarrollos realizados.Requisitos: Título profesional de Ingeniería en Informática, Ingeniería Civil Informática o carrera afín de al menos 8 semestres. Deseable experiencia mínima de 8 meses en desarrollo de aplicaciones web. Conocimientos en Angular, React, HTML5, CSS3, JavaScript y TypeScript. Conocimientos en Node.js, NestJS, MySQL y PostgreSQL. Manejo de Git y herramientas de desarrollo web. Deseable experiencia en aplicaciones web institucionales.Documentación requerida: Currículum vitae actualizado. Copia del título profesional. Antecedentes que acrediten experiencia y conocimientos.Condiciones: Contratación sujeta a adjudicación de licitación pública.

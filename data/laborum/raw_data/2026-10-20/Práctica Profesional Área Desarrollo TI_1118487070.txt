@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/practica-profesional-area-desarrollo-ti-1118487070.html
+EMPRESA: COIPSA
+UBICACION: Las Condes, Región Metropolitana
+TIPO: Full-time - Híbrido
+
+DESCRIPCIÓN:
+Realizar la documentacion del análisis y desarrollo de nuestra área de TI. Especificamente en Python y Django.Principales funcionesPYTHON Desarrollo de Modelos y Vistas Creación y mantenimiento de APIs Personalización del Panel de Administración Escritura de Pruebas (Testing) Uso y optimización básica del ORMDJANGO Comprensión del patrón MVT y estructura de "Apps" Trazabilidad del ciclo de vida de la petición. Lectura de Relaciones del ORM Mapeo de la triada DRF (si aplica) Análisis de Configuraciones y Dependencias Identificación de tareas en segundo planoRequisitos:- Cursando último año de la carrera- Carreras: Ing. Civil Informática, Ing en Computación, Desarrollador o Programador.- Disponibilidad para asistir a El Golf, Las Condes
