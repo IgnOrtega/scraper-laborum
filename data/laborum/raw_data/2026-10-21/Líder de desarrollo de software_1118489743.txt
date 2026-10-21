@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/lider-de-desarrollo-de-software-1118489743.html
+EMPRESA: UNO afp
+UBICACION: Santiago, Región Metropolitana
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+En UNO afp estamos en la búsqueda de nuestro próximo Líder de desarrollo de software para la Gerencia de Operaciones y Tecnología. Un rol clave que impulsará la calidad, escalabilidad y eficiencia de nuestras soluciones tecnológicas, fortaleciendo el trabajo de nuestras células de desarrollo.? ¿Cuál será tu propósito en este rol?Guiar técnica y estratégicamente a las células de desarrollo, asegurando buenas prácticas, soluciones robustas y una coordinación efectiva con distintas áreas para lograr entregas que impulsen el negocio.Principales responsabilidades• Liderar el diseño y desarrollo de soluciones Fullstack.• Revisar código y promover estándares de calidad, seguridad y mantenibilidad.• Resolver bloqueos técnicos y apoyar decisiones de arquitectura.• Coordinar con Product Owners, QA, Scrum Master y otras áreas para asegurar entregas alineadas a prioridades.• Impulsar mejoras en procesos, herramientas, flujos y buenas prácticas.• Fomentar el uso de GitHub, AWS y métricas DORA para optimizar el desempeño del equipo.
