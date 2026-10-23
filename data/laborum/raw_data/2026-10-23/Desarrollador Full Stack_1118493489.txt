@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/desarrollador-full-stack-1118493489.html
+EMPRESA: Districtxi
+UBICACION: Santiago de Chile, Región Metropolitana
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+Desarrollador Full Stack Resumen del Puesto Buscamos un Desarrollador Full Stack con experiencia para unirse a nuestro equipo dinámico. El candidato ideal será capaz de trabajar en todas las fases del ciclo de desarrollo de software, desde el diseño hasta la implementación y el mantenimiento. Responsabilidades  Desarrollar y mantener funcionalidades de aplicaciones web, abarcando tanto el frontend como el backend. Crear y conectar APIs robustas y bases de datos eficientes. Colaborar estrechamente con los equipos de diseño, producto y tecnología para entregar soluciones integrales. Realizar pruebas exhaustivas, corregir errores y optimizar el rendimiento de las aplicaciones. Documentar el trabajo realizado y participar activamente en revisiones de código para asegurar la calidad.  Requisitos  Experiencia demostrable en desarrollo frontend y backend. Sólidos conocimientos de JavaScript o TypeScript, así como experiencia con frameworks web modernos. Experiencia en el manejo de APIs y bases de datos. Dominio de Git y aplicación de buenas prácticas de desarrollo. Excelentes habilidades para el trabajo en equipo y una sólida capacidad para la resolución de problemas.
