@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/security-engineer-zscaler-1118497158.html
+EMPRESA: Confidencial
+UBICACION: Providencia, Región Metropolitana
+TIPO: Full-time - Híbrido
+
+DESCRIPCIÓN:
+En importante compañía internacional buscamos un(a) Network Engineer L3 - Security Service Edge (SSE) para integrarse a un equipo global de infraestructura y seguridad, participando en la operación y evolución de servicios de red para más de 90.000 usuarios a nivel mundial.Principales responsabilidades Administrar plataformas Security Service Edge (SSE). Gestionar y soportar entornos Zscaler. Resolver incidentes complejos de nivel 3 (L3). Participar en proyectos globales de infraestructura y seguridad. Implementar mejoras, automatizaciones y buenas prácticas ITIL. Colaborar con equipos internacionales en inglés.RequisitosExperiencia en administración de Zscaler.Experiencia en redes corporativas.Conocimientos en Zero Trust, ZTNA, SWG o SSE.Inglés avanzado (oral y escrito).Certificación ITIL o experiencia en marcos ITIL.Experiencia con Azure, AWS, Fortinet, Palo Alto o Cisco será valorada.OfrecemosParticipación en proyectos globales.Modalidad de trabajo internacional.Desarrollo profesional en tecnologías de última generación.Renta acorde a experiencia (Junior, Semi Senior o Senior).
