@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/ingeniero-a-especialista-en-seguridad-funcional-functional-safety-1118502382.html
+EMPRESA: Confidencial
+UBICACION: Provincia de Antofagasta, Región II
+TIPO: Full-time - Remoto
+
+DESCRIPCIÓN:
+Funciones principales: Evaluar el cumplimiento de requisitos de seguridad funcional en sistemas críticos de procesos industriales. Revisar estudios HAZOP, LOPA y SIL, identificando brechas y requerimientos de seguridad. Verificar el diseño, implementación y desempeño de funciones instrumentadas y sistemas de seguridad. Revisar especificaciones técnicas, pruebas funcionales y programas de pruebas periódicas de seguridad. Gestionar desviaciones, bypass, inhibiciones y modificaciones de sistemas de seguridad. Coordinar con las áreas técnicas el seguimiento de hallazgos, acciones correctivas y planes de mejora. Elaborar reportes e indicadores de desempeño y cumplimiento en seguridad funcional.Conocimientos deseables: IEC 61511/61508, SIS, SIF, SIL, HAZOP, LOPA, DCS, PLC, Proof Testing y gestión del cambio. Certificación en Seguridad Funcional deseable.
