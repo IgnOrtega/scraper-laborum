@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/especialista-en-gestion-de-vulnerabilidades-y-cloud-security-1118504636.html
+EMPRESA: Confidencial
+UBICACION: Providencia, Región Metropolitana
+TIPO: Full-time - Híbrido
+
+DESCRIPCIÓN:
+Importante compañía multinacional de origen europeo, especializada en servicios de energía, infraestructura, tecnología y transformación digital, se encuentra en búsqueda de un/a Vulnerability Engineer para integrarse a su equipo de Ciberseguridad.Principales responsabilidades Gestionar vulnerabilidades desde su identificación hasta su remediación y cierre definitivo. Analizar, validar y priorizar vulnerabilidades según su criticidad. Coordinar planes de remediación con Application Owners y equipos técnicos. Realizar seguimiento de compromisos y cumplimiento de SLA. Verificar la correcta remediación de los hallazgos. Participar en iniciativas de seguridad en ambientes Cloud.RequisitosFormación en Informática, Ciberseguridad o carrera afín.Experiencia comprobable en Vulnerability Management y gestión end-to-end.Manejo práctico de Tenable.Experiencia en Cloud Security (AWS, Azure, GCP u otros).Experiencia coordinando remediaciones con equipos técnicos y Application Owners.Inglés conversacional nivel B2 (excluyente).Deseable:Conocimientos o experiencia en Wiz y certificaciones en Ciberseguridad o Cloud Security.

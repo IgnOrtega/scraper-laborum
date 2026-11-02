@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/ingeniero-devops-1118504687.html
+EMPRESA: Constructora Villa SPA
+UBICACION: Villarrica, Región IX
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+Ingeniero DevOps Resumen del Puesto Buscamos un Ingeniero DevOps con experiencia para unirse a nuestro equipo. El candidato ideal será responsable de la integración y operación de sistemas, asegurando la eficiencia y escalabilidad de nuestras soluciones de software. Responsabilidades  Implementar y gestionar pipelines de Integración Continua y Despliegue Continuo (CI/CD). Administrar y optimizar entornos de contenedores (Kubernetes, Docker). Desarrollar y mantener la infraestructura como código (Terraform). Configurar y supervisar herramientas de monitoreo de infraestructura. Colaborar en la optimización del ciclo de vida del desarrollo de software. Asegurar la disponibilidad, rendimiento y seguridad de los sistemas.  Requisitos  Experiencia comprobada en roles de Ingeniería DevOps. Dominio de herramientas y conceptos de CI/CD. Conocimiento profundo de Kubernetes y Docker. Experiencia con Terraform u otras herramientas de Infraestructura como Código. Experiencia en monitoreo de sistemas y aplicaciones. Sólidas habilidades de resolución de problemas y automatización. Capacidad para trabajar en un entorno dinámico y colaborativo.
