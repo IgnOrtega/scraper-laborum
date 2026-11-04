@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/desarrollador-a-backend-mobile-net-java-reemplazo-1-mes-incorporacion-inmediata-1118507330.html
+EMPRESA: Smart Solutions &amp; Services SA
+UBICACION: Santiago de Chile, Región Metropolitana
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+¿Eres desarrollador(a) backend y tienes disponibilidad inmediata? Buscamos un(a) Desarrollador(a) Backend Mobile para sumarse temporalmente a nuestro equipo y dar continuidad a iniciativas de canales digitales y aplicaciones móviles.¿Qué harás? Desarrollar y mantener APIs y servicios backend. Implementar integraciones con sistemas corporativos y servicios externos. Brindar soporte técnico y resolver incidencias. Participar en pruebas, despliegues y mejoras evolutivas. Trabajar con equipos multidisciplinarios bajo metodologías ágiles.¿Qué necesitamos? Título de Ingeniería Informática o carrera afín. Al menos 2 años de experiencia en desarrollo backend. Experiencia en .NET Core/.NET o Java Spring Boot. Manejo de APIs REST, SQL Server y Git. Experiencia en entornos ágiles.Suma puntos si tienes: Experiencia en proyectos de aplicaciones móviles. Conocimientos de Azure, DevOps y microservicios. Experiencia con autenticación OAuth2 o JWT.¿Qué ofrecemos? Contrato por reemplazo de 1 mes. Incorporación inmediata. Modalidad de trabajo según definición del proyecto.Buscamos personas autónomas, con capacidad de adaptación y orientación a resultados, que puedan integrarse rápido y aportar valor desde el primer día. ¡Postula ahora!

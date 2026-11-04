@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/analista-de-sistemas-1118507111.html
+EMPRESA: Sociedad de Servicios Forestales Hata Spa
+UBICACION: Concepción, Región VIII
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+Analista de Datos y Bases de DatosResumen del PuestoBuscamos un profesional con experiencia en el análisis y modelado de información para optimizar la gestión de bases de datos y la implementación de futuros desarrollos de software. El candidato ideal será capaz de asegurar la disponibilidad y correcta organización de datos históricos y actuales, colaborando estrechamente con equipos técnicos y de gestión.Responsabilidades Analizar la estructura de datos actual y proponer mejoras para su organización y almacenamiento en bases de datos. Modelar y asegurar la disponibilidad de información histórica y datos relevantes para su integración en sistemas internos. Colaborar con profesionales de sistemas y análisis de gestión para la correcta implementación de soluciones. Garantizar la integridad y consistencia de los datos. Participar en la definición de requerimientos para nuevos desarrollos de software basados en las necesidades de información.Requisitos Experiencia demostrable en análisis de datos y gestión de bases de datos. Conocimientos avanzados de Microsoft Excel. Conocimientos intermedios de MySQL. Capacidad para trabajar de forma presencial y en modalidad de tiempo completo. Habilidades de comunicación y trabajo en equipo. Proactividad y capacidad para la resolución de problemas.
