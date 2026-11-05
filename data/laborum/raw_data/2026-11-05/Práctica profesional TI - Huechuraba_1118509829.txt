@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/practica-profesional-ti-huechuraba-1118509829.html
+EMPRESA: Bash Administración Ltda
+UBICACION: Huechuraba, Región Metropolitana
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+¡Buscamos Practicante de TI! ¿Te interesa la programación, la automatización de procesos y la tecnología? ¡Esta oportunidad es para ti! En Grupo de Empresas Bash estamos buscando un/a Practicante de TI, con interés en desarrollar soluciones tecnológicas que permitan optimizar procesos y mejorar la eficiencia de nuestras operaciones. ¿Cuáles serán tus principales desafíos? • Identificar procesos y tareas repetitivas que puedan ser automatizadas. • Levantar, analizar y documentar procesos actuales, identificando oportunidades de mejora. • Diseñar y desarrollar bots para automatizar tareas operativas. • Participar en integraciones entre bots y plataformas corporativas como SAP, Microsoft 365, sistemas web y APIs. • Ejecutar pruebas funcionales, detectar errores y validar las automatizaciones desarrolladas.  ¿Qué buscamos? Formación académica: • Estudiantes de Informática, Ingeniería Civil Industrial, Técnico en Programación, Automatización o carreras afines. Conocimientos técnicos: • Programación en Python, JavaScript, C# u otro lenguaje. • Conocimientos de RPA y automatización de procesos. • Manejo de APIs REST, JSON y servicios web. • Conocimientos de bases de datos y SQL. • Deseable manejo de herramientas como Automation Anywhere, UiPath o similares.Beneficios: Bono por realización de práctica Casino en dependencias de la empresa

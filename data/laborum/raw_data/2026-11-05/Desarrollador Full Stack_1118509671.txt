@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/desarrollador-full-stack-1118509671.html
+EMPRESA: Confidencial
+UBICACION: Concón, Región V
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+Principales funciones Desarrollar y mantener aplicaciones web con Angular y TypeScript. Implementar backend, APIs REST y bases de datos. Desarrollar módulos ERP (RRHH, Finanzas, Inventario, Bodega, Activos, entre otros). Integrar sistemas internos con plataformas externas y soluciones de IA. Optimizar el rendimiento, seguridad y escalabilidad de las aplicaciones.Requisitos Formación en Informática, Desarrollo de Software o carrera afín. Experiencia comprobable en desarrollo Full Stack. Dominio de Angular, TypeScript, JavaScript y MySQL. Experiencia en backend con Node.js, NestJS, .NET o similares. Manejo de APIs REST, Git y control de versiones. Conocimientos de arquitectura de software y sistemas empresariales.Conocimientos deseables Experiencia en desarrollo de sistemas ERP. Angular con PrimeNG. Docker, Linux y despliegue de aplicaciones. Integración de IA mediante APIs (OpenAI, Claude, Gemini). Conocimientos de LLM, agentes de IA, n8n y automatización.Perfil buscadoProfesional proactivo, autónomo y orientado a resultados, con capacidad para transformar requerimientos operativos en soluciones tecnológicas escalables.Postulación: Enviar CV indicando experiencia en Angular, sistemas empresariales y proyectos desarrollados.
