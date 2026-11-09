@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/especialista-microsoft-1118513734.html
+EMPRESA: ST Computación SA
+UBICACION: Santiago de Chile, Región Metropolitana
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+Busca un/a Administrador/a Especialista Microsoft para administrar, mantener y optimizar la infraestructura tecnológica, asegurando la disponibilidad, continuidad y seguridad de los servicios.Principales funciones: Administrar infraestructura Microsoft Azure y ambientes híbridos. Gestionar Microsoft 365: Exchange Online, SharePoint, Teams, OneDrive y Power Platform. Administrar identidades y accesos mediante Microsoft Entra ID y Active Directory. Automatizar procesos utilizando PowerShell. Resolver incidentes de alta complejidad y brindar soporte L3. Participar en proyectos, implementación de cambios y mejora continua del ecosistema Microsoft.Requerimientos: Título de Ingeniería en Informática, Ingeniería de Ejecución Informática o carrera afín. Experiencia sólida en Azure, Microsoft 365, Entra ID y ambientes híbridos. Dominio avanzado de PowerShell. Conocimientos de Azure DevOps y metodologías ágiles. Deseable contar con certificaciones Microsoft como AZ-104, MS-102, SC-300, PL-100/200 o similares.
