@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/desarrollador-a-mobile-senior-1118517265.html
+EMPRESA: KIBERNUM S.A.
+UBICACION: Providencia, Región Metropolitana
+TIPO: Full-time - Remoto
+
+DESCRIPCIÓN:
+En Kibernum nos encontramos en búsqueda de un(a) Desarrollador(a) Mobile Senior para participar en un importante proyecto tecnológico, orientado a la implementación de funcionalidades de validación de datos y autenticación mediante OTP en aplicaciones móviles.Principales funciones: Desarrollar e implementar funcionalidades móviles utilizando React Native y Expo. Integrar procesos de validación de datos mediante OTP. Consumir e integrar APIs REST/JSON. Implementar soluciones móviles seguras, robustas y escalables. Aplicar buenas prácticas de desarrollo y manejo de errores. Colaborar con equipos Front-End y Back-End para asegurar una experiencia consistente entre los distintos canales digitales.Requisitos: Título profesional en Ingeniería Informática, Ingeniería en Computación, Ingeniería de Software o carrera afín. Más de 5 años de experiencia en desarrollo de aplicaciones móviles. Experiencia sólida en React Native. Experiencia trabajando con Expo. Dominio de JavaScript. Experiencia en consumo e integración de APIs REST/JSON. Manejo de Git/GitFlow. Conocimientos de buenas prácticas de seguridad y desarrollo móvil.Condiciones: Modalidad: 100% remota. Jornada: Tiempo completo.¡Postula y sé parte de nuevos desafíos tecnológicos junto a Kibernum!

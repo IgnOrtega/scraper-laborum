@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/desarrollador-a-front-end-senior-1118517211.html
+EMPRESA: KIBERNUM S.A.
+UBICACION: Providencia, Región Metropolitana
+TIPO: Full-time - Remoto
+
+DESCRIPCIÓN:
+En Kibernum nos encontramos en búsqueda de un(a) Desarrollador(a) Front-End Senior para participar en un importante proyecto tecnológico, orientado a la implementación y adaptación de interfaces web para procesos de validación de datos y autenticación mediante OTP.Principales funciones: Desarrollar y adaptar interfaces web utilizando Vue.js y Nuxt. Implementar funcionalidades asociadas a procesos de validación de datos mediante OTP. Integrar servicios y APIs REST/JSON. Aplicar buenas prácticas de desarrollo, accesibilidad y manejo de errores. Colaborar con equipos técnicos para asegurar una experiencia consistente entre los distintos canales digitales.Requisitos: Título profesional en Ingeniería Informática, Ingeniería en Computación, Ingeniería de Software o carrera afín. Más de 5 años de experiencia en desarrollo Front-End. Experiencia sólida en JavaScript (ES5+). Experiencia desarrollando con Vue.js y Nuxt (versiones 2 y/o 3). Manejo de SCSS y consumo de APIs REST/JSON. Experiencia utilizando Git y flujos de trabajo GitFlow. Conocimientos de buenas prácticas de desarrollo y manejo de errores.Condiciones: Modalidad: 100% remota. Jornada: Tiempo completo.¡Postula y sé parte de nuevos desafíos tecnológicos junto a Kibernum!
