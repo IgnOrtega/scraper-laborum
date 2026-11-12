@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/programador-web-1118518263.html
+EMPRESA: Sismapro
+UBICACION: Chile Chico, Región XI
+TIPO: Full-time - Presencial
+
+DESCRIPCIÓN:
+Programador Web Resumen del Puesto Buscamos un Programador Web con experiencia en el desarrollo de aplicaciones utilizando tecnologías como Laravel y MySQL. El candidato ideal deberá demostrar un alto nivel de profesionalismo y compromiso en la ejecución de sus tareas. Responsabilidades  Desarrollar y mantener aplicaciones web. Implementar y optimizar bases de datos MySQL. Colaborar en la definición de soluciones técnicas. Asegurar la calidad y el rendimiento del código desarrollado.  Requisitos  Experiencia comprobable en desarrollo web. Dominio de frameworks como Laravel. Conocimiento sólido de bases de datos relacionales, especialmente MySQL. Capacidad para trabajar de forma autónoma y gestionar proyectos. Compromiso con la entrega de resultados de alta calidad.
