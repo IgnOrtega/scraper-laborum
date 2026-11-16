@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/desarrollador-a-fullstack-senior-1118639108.html
+EMPRESA: Confidencial
+UBICACION: Providencia, Región Metropolitana
+TIPO: Full-time - Remoto
+
+DESCRIPCIÓN:
+Desarrollador/a Fullstack SeniorNos encontramos en búsqueda de un/a Desarrollador/a Fullstack Senior, quien será responsable del diseño y desarrollo de componentes de software, asegurando altos estándares de calidad y apoyando al equipo en la definición de procesos, metodologías y estándares tecnológicos.Principales responsabilidades: Desarrollar componentes de software de alta calidad. Participar en la definición de procesos, metodologías y estándares de desarrollo. Aportar técnicamente al equipo y proponer mejoras. Identificar nuevas tecnologías y buenas prácticas que agreguen valor. Desarrollar soluciones considerando seguridad, rendimiento, escalabilidad y mantenibilidad.Requisitos: Ingeniería en Informática, Computación o carrera afín. Mínimo 3 años de experiencia en funciones similares. Experiencia en Node.js/TypeScript, Python, Java y/o C#. Diseño e integración de APIs REST. Bases de datos relacionales, SQL, NoSQL y/o Redis. Conocimientos de OAuth2, JWT y OWASP Top 10. Docker, CI/CD y experiencia en AWS, GCP o Azure. Experiencia en testing, integraciones y procesamiento asíncrono.Modalidad híbrida.Región Metropolitana, Santiago.¡Postula y sé parte de un equipo donde podrás aportar con tu experiencia y seguir impulsando soluciones digitales de alto impacto!
