@@ -1,0 +1,7 @@
+URL: https://www.laborum.cl/empleos/desarrollador-backend-area-datos-1118668638.html
+EMPRESA: Kabeli Selección Limitada
+UBICACION: Las Condes, Región Metropolitana
+TIPO: Full-time - Híbrido
+
+DESCRIPCIÓN:
+Buscamos un/a Desarrollador/a Backend para construir y operar microservicios e integraciones de datos sobre AWS, en una arquitectura orientada a eventos.Funciones principalesDesarrollar microservicios, APIs y BFF con Node.js y NestJS, incluyendo lógica de negocio, integración entre servicios y manejo de errores.Construir procesos ETL e integraciones entre fuentes de datos y servicios.Implementar flujos de publicación y consumo de eventos con Kafka y EventBridge.Validar endpoints y armar colecciones de pruebas de integración.RequisitosExperiencia con Node.js y NestJS.AWS: Glue, Lambda, EKS, S3 y EventBridge.Bases de datos SQL (PostgreSQL, Amazon Aurora) y NoSQL (DynamoDB).Docker y Kubernetes sobre Amazon EKS.Kafka para arquitectura de eventos.Postman o herramientas similares para pruebas de APIs.Git y GitLab.Jira o herramientas similares de gestión de tareas.
